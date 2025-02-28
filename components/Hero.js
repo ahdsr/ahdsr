@@ -25,10 +25,11 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
-          className="mb-24 mt-24 max-w-2xl font-sans text-7xl font-black tracking-[-0.08em] text-black"
+          className="mt-24 max-w-3xl pb-56 font-sans text-7xl font-black tracking-[-0.08em] text-black"
         >
-          Strategy. Craft. <span className="text-white"> Design.</span>
-          <span className="text-indigo-500"> Impact.</span>
+          Transforming ideas into{" "}
+          <span className="text-white"> intuitive </span>
+          <span className="text-indigo-500"> experiences.</span>
         </motion.h1>
 
         <div className="mt-6 flex h-full flex-row items-center justify-between space-x-8">
@@ -47,10 +48,12 @@ export default function Hero() {
             transition={{ duration: 1, ease: "easeOut", delay: 0.6 }}
             className="flex w-80 flex-col items-start text-left font-sans text-xl tracking-tight text-zinc-500"
           >
-            Great UX is the perfect balance of form and function—designed to
-            solve real problems. By combining research, creativity, and
-            technology, I create intuitive experiences that drive engagement,
-            efficiency, and impact.
+            I blend strategy, research, and technology to craft seamless,
+            intuitive experiences that engage users and drive meaningful
+            outcomes.{" "}
+            <strong className="mt-4">
+              Let’s build something that matters.
+            </strong>
             {/* <Link href="/blog " className="mt-4">
               <Button
                 className="rounded-lg bg-blue-600 px-6 py-3 text-white hover:bg-blue-500"

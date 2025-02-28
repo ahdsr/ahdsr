@@ -14,7 +14,7 @@ export default function ParallaxSection({ mediaSrc, isVideo = false }) {
   }, []);
 
   return (
-    <div className="relative h-screen w-full overflow-hidden bg-red-500">
+    <div className="relative h-screen w-full overflow-hidden bg-black">
       {isVideo ? (
         <video
           className="absolute left-0 top-0 -mt-96 h-full w-full object-cover md:-mt-64"
