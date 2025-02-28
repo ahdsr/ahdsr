@@ -113,7 +113,7 @@ export default function Navbar() {
             <div className="flex flex-col space-y-6 text-center text-2xl">
               <Link
                 href="/"
-                className="hover:text-gray-500"
+                className="font-sans text-7xl font-bold tracking-tight hover:text-gray-500"
                 onClick={() => setIsOpen(false)}
               >
                 Home
@@ -127,14 +127,14 @@ export default function Navbar() {
               </Link> */}
               <Link
                 href="/work"
-                className="hover:text-gray-500"
+                className="font-sans text-7xl font-bold tracking-tight hover:text-gray-500"
                 onClick={() => setIsOpen(false)}
               >
                 Work
               </Link>
               <Link
                 href="/contact"
-                className="hover:text-gray-500"
+                className="font-sans text-7xl font-bold tracking-tight hover:text-gray-500"
                 onClick={() => setIsOpen(false)}
               >
                 Contact
