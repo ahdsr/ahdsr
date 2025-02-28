@@ -13,7 +13,7 @@ export default function BlogPage() {
 
           <div className="mt-2 max-w-2xl text-xl">
             <h2 className="my-8 font-sans text-2xl font-semibold tracking-tight text-zinc-500">
-              It was time for a change
+              It was time for a change edit
             </h2>
             <p className="mb-6">
               With 2024 ending, and my old portfolio site development progress
