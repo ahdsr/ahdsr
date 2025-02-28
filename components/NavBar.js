@@ -74,7 +74,7 @@ export default function Navbar() {
             About
           </Link> */}
           <Link href="/work">
-            <MotionButton text="Contact" size="regular" />
+            <MotionButton text="Work" size="regular" />
           </Link>
           <Link href="/contact">
             <MotionButton text="Contact" size="regular" />
