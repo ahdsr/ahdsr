@@ -14,6 +14,7 @@ const images = [
   "/images/other/Random_v002.png",
   "/images/other/RoomRender.png",
   "/images/other/Moon.png",
+  "/images/other/Dunny.png",
 
   // Add more image paths as needed
 ];

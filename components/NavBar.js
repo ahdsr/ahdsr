@@ -33,7 +33,7 @@ export default function Navbar() {
   // Define background color based on page
   const pageBgColors = {
     "/": scrolled
-      ? "bg-white text-zinc-800  shadow-xl shadow-zinc-500/10"
+      ? "bg-white text-zinc-800 shadow-xl shadow-zinc-500/10"
       : "bg-zinc-300 text-gray-600 border-b border-b-zinc-400",
     "/about": "bg-white text-black border-b border-b-zinc-300",
     "/work": "bg-white text-black border-b border-b-zinc-300",
@@ -54,10 +54,10 @@ export default function Navbar() {
         pageBgColors[pathname] || "bg-gray-800 text-white"
       }`}
     >
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-8 py-4 md:px-20">
         {/* Logo */}
-        <div className="rounded-full bg-white px-2.5 py-2 font-sans text-xl font-bold tracking-tight">
-          <Link href="/" className="hover:text-gray-300">
+        <div className="rounded-full bg-zinc-100 px-2.5 py-2 font-sans text-xl font-bold tracking-tight hover:bg-zinc-200">
+          <Link href="/" className="">
             LC
           </Link>
         </div>

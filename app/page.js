@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <ParallaxSection mediaSrc="/videos/sample6.mp4" isVideo={true} />
+      <ParallaxSection mediaSrc="/videos/sample1.mp4" isVideo={true} />
       <Featured />
       <Skills />
     </>
