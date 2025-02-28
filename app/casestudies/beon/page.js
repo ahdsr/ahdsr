@@ -1,0 +1,262 @@
+"use client";
+
+import HeroCaseStudy from "@/components/HeroCaseStudy";
+import ProjectNavigation from "@/components/ProjectNavigation";
+import AnimatedImage from "@/components/AnimatedImage";
+import ImageGallery from "@/components/ImageCarousel";
+import { usePathname } from "next/navigation";
+
+const caseStudies = [
+  { slug: "codeconnect", title: "Code Connect" },
+  { slug: "quest", title: "Quest Insurance" },
+  { slug: "beon", title: "Beon" },
+  { slug: "projectalchemy", title: "Project Alchemy" },
+];
+
+const images = [
+  "/images/featured/beon/1.png",
+  "/images/featured/beon/2.png",
+  "/images/featured/beon/3.png",
+];
+
+const captions = [
+  "Initial screen to engage with insights",
+  "Insights in relation to event",
+  "Spider chat to easily illustate areas of strength and weaknesss",
+];
+
+export default function CodeConnect() {
+  const pathname = usePathname();
+  const currentSlug = pathname.split("/").pop();
+  const currentIndex = caseStudies.findIndex(
+    (caseStudy) => caseStudy.slug === currentSlug,
+  );
+
+  const prevProject = caseStudies[currentIndex - 1] || null;
+  const nextProject = caseStudies[currentIndex + 1] || null;
+
+  return (
+    <>
+      <HeroCaseStudy
+        title="BEON Performance."
+        subtitle="Product Design"
+        description="UX Design"
+        backgroundImage="/images/featured/beon/BEON_Hero.png"
+        bgColor="bg-green-700"
+      />
+
+      <div className="mx-auto max-w-7xl px-8 sm:px-20">
+        {/* Intro */}
+        <div className="mx-auto flex flex-col gap-8 border-t border-t-zinc-300 py-12 font-sans md:flex-row md:py-24">
+          <div className="flex-1 text-xl font-light tracking-normal text-zinc-600 md:text-2xl md:font-thin">
+            In collaboration with BEON Performance’s high-performance mindset
+            principles, I conceptualized an experience where users can track,
+            plan, and practice the ACT model—a structured approach to achieving
+            peak mental performance. This digital tool empowers users to gain
+            insights, track important events, and manage ACT models in a way
+            that enhances their ability to stay focused, build confidence, and
+            sharpen their competitive edge. Whether users aim to train their
+            minds for high performance, break bad habits, or optimize their
+            mental resilience, this experience provides a seamless,
+            user-centered platform that bridges performance psychology with
+            intuitive digital design.
+          </div>
+          <div className="mb-8 text-5xl font-medium tracking-tighter text-zinc-800">
+            <div className="mb-4">
+              <p className="font-sans text-lg font-light tracking-tighter text-zinc-600 md:text-xl">
+                Client
+              </p>
+              <p className="font-sans text-lg font-medium tracking-tighter text-zinc-600 md:text-xl">
+                beonperformance.com
+              </p>
+            </div>
+            <div className="mb-4">
+              <p className="font-sans text-lg font-light tracking-tighter text-zinc-600 md:text-xl">
+                Role
+              </p>
+              <p className="font-sans text-lg font-medium tracking-tighter text-zinc-600 md:text-xl">
+                Product & UX Design
+              </p>
+            </div>
+            <div className="mb-4">
+              <p className="font-sans text-lg font-light tracking-tighter text-zinc-600 md:text-xl">
+                Duration
+              </p>
+              <p className="font-sans text-lg font-medium tracking-tighter text-zinc-600 md:text-xl">
+                3 months
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* My Role & Team */}
+        <div className="mx-auto flex flex-col gap-8 border-t border-t-zinc-300 py-12 font-sans md:flex-row md:py-24">
+          <div className="mb-8 flex-1 text-5xl font-medium tracking-tighter text-zinc-800">
+            My role & team
+          </div>
+          <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
+            My role on the team was to conceptualize the MVP for a digital
+            experience that would allow users to seamlessly apply the ACT model
+            in their everyday lives. This involved designing an intuitive app
+            experience for individuals looking to train their mindset daily,
+            enhance focus, and gain a competitive edge over their peers. My
+            process included brainstorming, user journey mapping, and
+            formulating a rough concept to assess whether BEON Performance was
+            interested in expanding beyond in-person seminars and one-on-one
+            coaching to include a scalable digital solution.
+          </div>
+        </div>
+        {/* Competitive landscape */}
+        <div className="mx-auto flex flex-row gap-12 border-t border-t-zinc-300 py-12 font-sans md:py-24">
+          <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
+            <div className="mb-4 text-5xl font-medium tracking-tighter text-zinc-800">
+              Core Pillars of the Experience
+            </div>
+            <div className="text-lg font-light tracking-tight text-zinc-600 md:text-lg">
+              The three main pillars of the experience were ACT Models, Events,
+              and Insights.
+              <ul className="mt-8 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
+                <li className="border-b border-b-zinc-300 py-4">
+                  ACT Models served as a user-managed system of key terms,
+                  concepts, and ideas that collectively formed a structured
+                  framework for mental training. These models were designed to
+                  be tracked, refined, and applied to real-life scenarios.
+                </li>
+                <li className="border-b border-b-zinc-300 py-4">
+                  Events represented significant moments or challenges in a
+                  user’s life, where ACT Models could be applied to develop
+                  resilience, optimize performance, and reinforce mental
+                  training.
+                </li>
+                <li className="border-b border-b-zinc-300 py-4">
+                  Insights provided data-driven reflections on a user’s
+                  progress, helping them fine-tune their mindset and approach
+                  over time.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* Make the journey short and easy!!! */}
+        <div className="mx-auto flex flex-col gap-x-8 py-12 font-sans md:flex-row md:py-24">
+          <div className="mb-8 flex-1 text-5xl font-medium tracking-tighter text-zinc-800">
+            The ACT model
+          </div>
+          <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
+            Whether used by a high-profile corporate leader or an elite military
+            commander, the ACT Model functioned as a training compass—guiding
+            individuals toward their maximum potential. However, the challenge
+            was translating this abstract, yet powerful, mindset into a tangible
+            digital experience. The solution? A guided ACT Model creation
+            experience that seamlessly led users through the process of
+            building, refining, and applying their personal mental frameworks.
+            This approach ensured that the core philosophy of the ACT Model
+            remained intact, while making it actionable and engaging in a
+            digital format.
+          </div>
+        </div>
+        <AnimatedImage
+          src={[
+            "/images/featured/beon/ACT-Create1.png",
+            "/images/featured/beon/ACT-Create2.png",
+          ]}
+          bgColor="bg-white"
+        />
+        <div>
+          <div className="mt-2 border-b border-b-zinc-300 pb-2 text-right font-sans text-xs tracking-tight text-black">
+            The user flow for creating a model
+          </div>
+        </div>
+        <AnimatedImage
+          src="/images/featured/beon/ACT-Create3.png"
+          labels={[]}
+          bgColor="bg-white"
+        />
+        {/* Tracking and Reflecting on Performance */}
+        <div className="mx-auto flex flex-col gap-8 gap-x-8 py-12 font-sans md:flex-row md:py-24">
+          <div className="mb-8 flex-1 text-5xl font-medium tracking-tighter text-zinc-800">
+            Tracking and Reflecting on Performance
+          </div>
+          <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
+            The second pillar, Events, functioned as a hybrid calendar and
+            performance tracker. Like any standard calendar, it allowed users to
+            schedule and track important meetings, competitions, practices, and
+            other key moments. However, what set it apart was its reflection
+            component—users could evaluate their performance after each event,
+            providing an honest self-assessment to uncover insights and trends
+            over time.
+          </div>
+          <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
+            I explored different ways to present this feature, from a
+            traditional calendar view to a streamlined list format, ensuring
+            usability and clarity. The key challenge was balancing familiarity
+            with functionality—the interface needed to be intuitive while
+            encouraging users to engage deeply with their progress and mindset
+            development.
+          </div>
+        </div>
+        {/* Quote and Bundle */}
+        <AnimatedImage
+          src="/images/featured/beon/EventCreation.png"
+          label="Added"
+          delay={0.3}
+          bgColor="bg-white"
+        />
+        <AnimatedImage
+          src={["/images/featured/beon/EventScoring.png"]}
+          labels={[]}
+          bgColor="bg-white"
+        />
+        {/* Inisght */}
+        <div className="mx-auto flex flex-col gap-8 gap-x-8 py-12 font-sans md:flex-row md:py-24">
+          <div className="mb-8 flex-1 text-5xl font-medium tracking-tighter text-zinc-800">
+            Insights
+          </div>
+          <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
+            After using the application for a while, users would receive
+            personalized insights based on their progress. The challenge was
+            twofold: (a) quantifying results effectively and (b) presenting them
+            in a way that encourages self-development. I explored various
+            visualization techniques, including progress bars, radial charts,
+            and heatmaps, to highlight key milestones and engagement patterns.
+            To refine the approach, I tested these designs with a small user
+            group, focusing on clarity and motivation. Feedback helped shape the
+            final version, ensuring the insights were both intuitive and
+            encouraging for continued growth.
+          </div>
+        </div>
+        <div className="my-4 flex items-center justify-center border border-zinc-300 bg-zinc-50 py-8">
+          {/* Define Gallery Size Here */}
+
+          <ImageGallery
+            images={images}
+            captions={captions}
+            className="h-[800px] w-[800px]"
+            captionPosition="bottom-2 " // Customize caption position
+          />
+        </div>
+        {/* Inisght */}
+        <div className="mx-auto flex flex-col gap-8 gap-x-8 py-12 font-sans md:flex-row md:py-24">
+          <div className="mb-8 flex-1 text-5xl font-medium tracking-tighter text-zinc-800">
+            Final thoughts
+          </div>
+          <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
+            This project was a valuable experience in developing conceptual
+            ideas and pitching a product from the ground up. Working within a
+            small startup setting and navigating the ideation process was
+            especially rewarding for me. At the time, BEON Performance was in
+            its early stages, and we were simultaneously refining its business
+            strategy. Ultimately, the team decided to focus on in-person
+            seminars and one-on-one coaching as their core business model, so
+            this project did not progress beyond the ideation phase.
+          </div>
+        </div>
+        {/* Next & Previous Project Navigation */}
+        <ProjectNavigation
+          prevProject={prevProject}
+          nextProject={nextProject}
+        />
+      </div>
+    </>
+  );
+}

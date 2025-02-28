@@ -1,0 +1,143 @@
+"use client";
+
+import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation"; // Import usePathname to detect the current route
+import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
+
+export default function Navbar() {
+  const pathname = usePathname(); // Get the current route
+  const [scrolled, setScrolled] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    if (pathname !== "/") return; // Only enable scrolling effect on the homepage
+
+    const handleScroll = () => {
+      const triggerSection = document.getElementById("trigger-section");
+
+      if (!triggerSection) return;
+
+      const triggerPosition =
+        triggerSection.getBoundingClientRect().top + window.scrollY;
+      const scrollPosition = window.scrollY;
+
+      // If scrolled past the trigger section, keep the navbar grey
+      setScrolled(scrollPosition >= triggerPosition);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [pathname]); // Re-run only when the pathname changes
+
+  // Define background color based on page
+  const pageBgColors = {
+    "/": scrolled
+      ? "bg-white text-zinc-800  shadow-xl shadow-zinc-500/10"
+      : "bg-zinc-300 text-gray-600 border-b border-b-zinc-400",
+    "/about": "bg-white text-black border-b border-b-zinc-300",
+    "/work": "bg-white text-black border-b border-b-zinc-300",
+    "/contact": "bg-white text-black border-b border-b-zinc-300",
+    "/blog": "bg-blue-800 text-white border-b border-b-zinc-300",
+    "/casestudies/codeconnect": "bg-emerald-500 text-white  shadow-xl",
+    "/casestudies/projectalchemy": "bg-orange-500 text-white shadow-xl ",
+    "/casestudies/beon":
+      "bg-black  border-b border-b-zinc-700 text-white shadow-xl ",
+    "/casestudies/quest": "bg-green-700 text-white shadow-xl ",
+  };
+
+  return (
+    <nav
+      className={`fixed left-0 top-0 z-50 w-full transition-all duration-300 ${
+        pageBgColors[pathname] || "bg-gray-800 text-white"
+      }`}
+    >
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+        {/* Logo */}
+        <div className="rounded-full bg-indigo-300 px-3 py-2 font-sans text-xl font-bold tracking-tight">
+          <Link href="/" className="hover:text-gray-300">
+            LC
+          </Link>
+        </div>
+
+        {/* Desktop Navigation */}
+        <div className="hidden space-x-6 font-sans text-sm md:flex">
+          <Link href="/" className="hover:text-gray-300">
+            Home
+          </Link>
+          <Link href="/about" className="hover:text-gray-300">
+            About
+          </Link>
+          <Link href="/work" className="hover:text-gray-300">
+            Work
+          </Link>
+          <Link href="/contact" className="hover:text-gray-300">
+            Contact
+          </Link>
+        </div>
+
+        {/* Mobile Hamburger Menu */}
+        <div className="md:hidden">
+          <button
+            onClick={() => setIsOpen(true)}
+            className="focus:outline-none"
+          >
+            <motion.div whileTap={{ scale: 0.9 }}>☰</motion.div>
+          </button>
+        </div>
+      </div>
+
+      {/* Fullscreen Mobile Menu */}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-black"
+          >
+            {/* Close Button */}
+            <button
+              onClick={() => setIsOpen(false)}
+              className="absolute right-6 top-6 text-3xl"
+            >
+              ✕
+            </button>
+
+            {/* Mobile Navigation Links */}
+            <div className="flex flex-col space-y-6 text-center text-2xl">
+              <Link
+                href="/"
+                className="hover:text-gray-500"
+                onClick={() => setIsOpen(false)}
+              >
+                Home
+              </Link>
+              <Link
+                href="/about"
+                className="hover:text-gray-500"
+                onClick={() => setIsOpen(false)}
+              >
+                About
+              </Link>
+              <Link
+                href="/work"
+                className="hover:text-gray-500"
+                onClick={() => setIsOpen(false)}
+              >
+                Work
+              </Link>
+              <Link
+                href="/contact"
+                className="hover:text-gray-500"
+                onClick={() => setIsOpen(false)}
+              >
+                Contact
+              </Link>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </nav>
+  );
+}
