@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -26,12 +27,12 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {/* Fixed Navbar */}
-        <div className="fixed top-0 left-0 z-50 w-full ">
+        <div className="fixed left-0 top-0 z-50 w-full">
           <Navbar />
         </div>
 
         {/* Content with padding to prevent overlap */}
-        <main className="relative top-0 bg-white ">{children}</main>
+        <main className="relative top-0 bg-white">{children}</main>
         <div className="bg-white">
           <Footer />
         </div>
