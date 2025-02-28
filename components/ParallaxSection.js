@@ -17,7 +17,7 @@ export default function ParallaxSection({ mediaSrc, isVideo = false }) {
     <div className="relative h-screen w-full overflow-hidden bg-red-500">
       {isVideo ? (
         <video
-          className="absolute left-0 top-0 -mt-64 h-full w-full object-cover"
+          className="absolute left-0 top-0 -mt-96 h-full w-full object-cover md:-mt-64"
           src={mediaSrc}
           autoPlay
           loop
@@ -26,7 +26,7 @@ export default function ParallaxSection({ mediaSrc, isVideo = false }) {
         />
       ) : (
         <img
-          className="absolute left-0 top-0 -mt-64 h-full w-full object-cover"
+          className="absolute left-0 top-0 -mt-96 h-full w-full object-cover md:-mt-64"
           src={mediaSrc}
           alt="Parallax Background"
           style={{ transform: `translateY(${offset * 0.5}px)` }} // Apply parallax effect

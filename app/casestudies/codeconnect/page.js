@@ -76,7 +76,16 @@ export default function CodeConnect() {
             My role & team
           </div>
           <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
-            ...
+            As a UX Designer on the Code Connect project, I focused on creating
+            seamless user experiences while working within the constraints of
+            the RUF design system library. Rather than reinventing visuals, I
+            strategically leveraged existing components to maintain consistency
+            and efficiency. Collaborating closely with the marketing and project
+            management teams, I ensured that imagery aligned with the project’s
+            vision and objectives. My role also involved in-depth competitor
+            research, analyzing industry trends to identify opportunities for
+            differentiation and innovation—ultimately shaping solutions that set
+            Code Connect apart.
           </div>
         </div>
 

@@ -40,10 +40,11 @@ export default function Navbar() {
     "/contact": "bg-white text-black border-b border-b-zinc-300",
     "/blog": "bg-blue-800 text-white border-b border-b-zinc-300",
     "/casestudies/codeconnect": "bg-emerald-500 text-white  shadow-xl",
-    "/casestudies/projectalchemy": "bg-orange-500 text-white shadow-xl ",
+    "/casestudies/projectalchemy": "bg-orange-500 text-white shadow-xl",
     "/casestudies/beon":
-      "bg-black  border-b border-b-zinc-700 text-white shadow-xl ",
-    "/casestudies/quest": "bg-green-700 text-white shadow-xl ",
+      "bg-black  border-b border-b-zinc-700 text-white shadow-xl",
+    "/casestudies/quest": "bg-green-700 text-white shadow-xl",
+    "/work/3d": "bg-teal-700 text-white",
   };
 
   return (
@@ -61,7 +62,7 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Navigation */}
-        <div className="hidden space-x-6 font-sans text-sm md:flex">
+        <div className="hidden space-x-6 font-sans text-sm md:flex md:text-base">
           <Link href="/" className="hover:text-gray-300">
             Home
           </Link>
