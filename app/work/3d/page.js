@@ -26,7 +26,7 @@ export default function ContactPage() {
         title="3D Rendering"
         subtitle="Modeling & 3D"
         description="UX Design"
-        backgroundImage="/images/other/3D_hero.png"
+        backgroundImage="/images/other/3D_Hero.png"
         bgColor="bg-green-700"
       />
       <div className="mx-auto max-w-7xl px-8 sm:px-20">

@@ -3,8 +3,6 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
-import Link from "next/link";
-import Button from "./Button";
 
 export default function Hero() {
   const { ref, inView } = useInView({
