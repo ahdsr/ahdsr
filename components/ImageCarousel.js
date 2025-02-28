@@ -39,7 +39,7 @@ const ImageGallery = ({
       {/* Previous Button */}
       <button
         onClick={prevImage}
-        className="absolute left-2 top-1/2 z-10 -translate-y-1/2 transform rounded-full bg-black/50 p-2 text-white"
+        className="absolute left-2 top-1/2 z-10 -translate-y-1/2 transform rounded-full bg-black/100 p-2 text-white"
       >
         <ChevronLeftIcon className="h-6 w-6" />
       </button>
@@ -79,7 +79,7 @@ const ImageGallery = ({
       {/* Next Button */}
       <button
         onClick={nextImage}
-        className="absolute right-2 top-1/2 z-10 -translate-y-1/2 transform rounded-full bg-black/50 p-2 text-white"
+        className="absolute right-2 top-1/2 z-10 -translate-y-1/2 transform rounded-full bg-black/100 p-2 text-white"
       >
         <ChevronRightIcon className="h-6 w-6" />
       </button>

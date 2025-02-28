@@ -37,7 +37,9 @@ export default function ContactPage() {
               project.
             </div>
             <div className="font-xl font-sans text-blue-700">
-              lucas.czuchraj@gmail.com
+              <a href="mailto:lucas.czuchraj@gmail.com">
+                lucas.czuchraj@gmail.com
+              </a>
             </div>
           </div>
 

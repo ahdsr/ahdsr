@@ -55,7 +55,7 @@ export default function Navbar() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         {/* Logo */}
-        <div className="rounded-full bg-indigo-300 px-3 py-2 font-sans text-xl font-bold tracking-tight">
+        <div className="rounded-full bg-white px-2.5 py-2 font-sans text-xl font-bold tracking-tight">
           <Link href="/" className="hover:text-gray-300">
             LC
           </Link>
