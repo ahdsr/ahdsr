@@ -30,7 +30,7 @@ export default function Hero() {
             stiffness: 200,
             damping: 10,
           }} // Smooth easing
-          className="mt-24 max-w-3xl pb-56 font-sans text-7xl font-black tracking-[-0.08em] text-black"
+          className="mt-24 max-w-3xl pb-56 font-sans text-6xl font-black tracking-[-0.08em] text-black md:text-7xl"
         >
           Transforming ideas into{" "}
           <span className="text-white"> intuitive </span>
