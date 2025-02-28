@@ -23,7 +23,12 @@ export default function HeroContact() {
           <motion.h1
             initial={{ y: "100%" }} // Starts below the div
             animate={{ y: "0%" }} // Animates into view
-            transition={{ duration: 0.5, ease: "easeOut" }} // Smooth easing
+            transition={{
+              duration: 0.3,
+              type: "spring",
+              stiffness: 100,
+              damping: 10,
+            }} // Smooth easing
             className="mt-24 max-w-5xl font-sans text-9xl font-semibold tracking-tighter text-black"
           >
             Contact

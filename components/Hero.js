@@ -24,7 +24,12 @@ export default function Hero() {
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
+          transition={{
+            duration: 0.3,
+            type: "spring",
+            stiffness: 200,
+            damping: 10,
+          }} // Smooth easing
           className="mt-24 max-w-3xl pb-56 font-sans text-7xl font-black tracking-[-0.08em] text-black"
         >
           Transforming ideas into{" "}
@@ -45,7 +50,12 @@ export default function Hero() {
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 1, ease: "easeOut", delay: 0.6 }}
+            transition={{
+              duration: 0.3,
+              type: "spring",
+              stiffness: 200,
+              damping: 5,
+            }} // Smooth easing
             className="flex w-80 flex-col items-start text-left font-sans text-xl tracking-tight text-zinc-500"
           >
             I blend strategy, research, and technology to craft seamless,
