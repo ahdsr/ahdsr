@@ -10,31 +10,45 @@ import Link from "next/link";
 const sections = [
   {
     title: "Digital Products",
-    category: "Product Design",
+    category: "Use Cases",
     description:
-      "From idea to a product: creating successful digital services for innovative startups and established businesses with cutting-edge UX, UI design, front and back-end development.",
+      "Transforming ideas into standout digital services with innovative UX, UI design, and full-stack development. From early-stage concepts to fully functional products, I craft seamless digital experiences that drive engagement and business success.",
     projects: [
       {
         title: "Code Connect",
-        description: "Product & UX Design",
+        description: "Site Redesign",
         link: "/casestudies/codeconnect",
         image: "/images/featured/codeconnect/Codeconnect_Thumb.png",
         bgColor: "bg-emerald-500",
       },
       {
         title: "Quest Insurance",
-        description: "Product & UX Design",
-        link: "/casestudies/projectalchemy",
-        image: "/images/featured/projectalchemy/ProjectAlchemy_Thumb.png",
-        bgColor: "bg-orange-500",
+        description: "Product Design",
+        link: "/casestudies/quest",
+        image: "/images/featured/quest/Quest_Thumb.png",
+        bgColor: "bg-indigo-500",
+      },
+      {
+        title: "TD Dashboards",
+        description: "Native App",
+        link: "/casestudies/tddashboards",
+        image: "/images/featured/tddashboards/TDDash_hero.webp",
+        bgColor: "bg-indigo-500",
+      },
+      {
+        title: "TD Bill Manager",
+        description: "Native App",
+        link: "/casestudies/tdbillmanager",
+        image: "/images/featured/tdbillmanager/tdpaybills_hero.webp",
+        bgColor: "bg-indigo-500",
       },
     ],
   },
   {
     title: "Conceptual & Product Pitches",
-    category: "Product Design",
+    category: "Conceptual & Pitches",
     description:
-      "We design and develop powerful e-commerce platforms, enabling businesses to grow their online presence and reach customers worldwide.",
+      "Exploring bold ideas—projects that started or remained as concepts beyond client work. These creative explorations push boundaries, challenge industry norms, and serve as a testing ground for fresh, innovative approaches to digital solutions.",
     projects: [
       {
         title: "BEON",
@@ -54,9 +68,17 @@ const sections = [
   },
   {
     title: "All Other",
-    category: "Other",
-    description: "Personal project, concepts and mediums I regularly explore",
+    category: "3D",
+    description:
+      "A showcase of personal creativity, including design, rendering, photography, and animation. This space highlights passion projects, experimental work, and artistic expressions that inspire and influence my professional design process.",
     projects: [
+      {
+        title: "Rendering",
+        description: "Blender, Rendering",
+        link: "/work/3d",
+        image: "/images/other/RoomRender_Thumb.png",
+        bgColor: "bg-blue-500",
+      },
       {
         title: "Rendering",
         description: "Blender, Rendering",
@@ -93,7 +115,7 @@ export default function Work() {
     <section className="mx-auto max-w-7xl" id="trigger-section">
       {/* Filter Buttons */}
       <div className="justify-left mb-12 flex space-x-4">
-        {["All", "Product Design", "UX Design", "Other"].map((category) => (
+        {["All", "Use Cases", "Conceptual & Pitches", "3D"].map((category) => (
           <button
             key={category}
             onClick={() => setSelectedCategory(category)}
@@ -121,20 +143,17 @@ export default function Work() {
           {/* Section Description */}
           <p
             ref={ref}
-            className="mb-12 font-sans text-lg tracking-tight text-gray-600"
+            className="s mb-12 font-sans text-lg tracking-tight text-gray-600"
           >
             {section.description}
           </p>
 
           {/* Project List */}
-          <div className="mb-48 flex flex-wrap gap-12">
+          <div className="mb-48 grid grid-cols-1 gap-8 md:grid-cols-2">
             {section.projects.map((project, projectIndex) => (
-              <div
-                key={projectIndex}
-                className="w-full sm:w-[48%] lg:w-[47.5%]"
-              >
+              <div key={projectIndex} className="flex w-full flex-col">
                 <div
-                  className={`relative h-64 w-full overflow-hidden ${project.bgColor}`}
+                  className={`relative h-64 w-full overflow-hidden ${project.bgColor} flex-grow`}
                 >
                   <Link href={project.link}>
                     <motion.div
@@ -157,7 +176,7 @@ export default function Work() {
                 <h3 className="mt-2 font-light text-zinc-800">
                   {project.title}
                 </h3>
-                <p className="font-light text-zinc-400">
+                <p className="w-full font-light text-zinc-400">
                   {project.description}
                 </p>
               </div>

@@ -1,8 +1,9 @@
 "use client";
 
 import HeroCaseStudy from "@/components/HeroCaseStudy";
-import ProjectNavigation from "@/components/ProjectNavigation";
 import AnimatedImage from "@/components/AnimatedImage";
+import ScrollablePhone from "@/components/ScrollablePhone";
+
 import { usePathname } from "next/navigation";
 
 const caseStudies = [
@@ -36,7 +37,12 @@ export default function CodeConnect() {
         {/* Intro */}
         <div className="mx-auto flex flex-col gap-8 border-t border-t-zinc-300 py-12 font-sans md:flex-row md:py-24">
           <div className="flex-1 text-xl font-light tracking-normal text-zinc-600 md:text-2xl md:font-thin">
-            ...
+            TD needed to enhance its online banking application. Our goal was to
+            inform customers about its features before account creation or
+            online banking registration. We achieved this by developing a pre
+            and post-sign-on dashboard that displayed balances, provided
+            AI-driven insights, and showcased relevant information on the
+            homepage.
           </div>
           <div className="mb-8 text-5xl font-medium tracking-tighter text-zinc-800">
             <div className="mb-4">
@@ -68,12 +74,24 @@ export default function CodeConnect() {
         {/* My Role & Team */}
         <div className="mx-auto flex flex-col gap-8 border-t border-t-zinc-300 py-12 font-sans md:flex-row md:py-24">
           <div className="mb-8 flex-1 text-5xl font-medium tracking-tighter text-zinc-800">
-            ...
+            Product evolution
+            {/* <div className="flex items-center justify-center">
+              <ScrollablePhone
+                imageSrc={"/images/global/screen.png"}
+                frameSrc={"/images/global/iPhone.png"}
+              />
+            </div> */}
           </div>
           <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
-            ...
+            TD needed to enhance its online banking application. Our goal was to
+            inform customers about its features before account creation or
+            online banking registration. We achieved this by developing a pre-
+            and post-sign-on dashboard that displayed balances, provided
+            AI-driven insights, and showcased relevant information on the
+            homepage.
           </div>
         </div>
+
         <AnimatedImage
           src="/images/featured/tddashboards/tddash_evolution.webp"
           bgColor="bg-white"
