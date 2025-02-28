@@ -45,14 +45,14 @@ export default function Skills() {
   ];
 
   return (
-    <section className="bg-zinc-800">
-      <h1 className="w-full gap-6 py-24 pb-2 mx-auto font-sans text-6xl font-semibold tracking-tighter text-indigo-600 max-w-7xl md:flex-row md:px-20">
+    <section className="mx-auto max-w-7xl bg-zinc-800 px-8 py-20 sm:px-20">
+      <h1 className="mb-12 w-full pb-2 text-left font-sans text-6xl font-semibold tracking-tighter text-indigo-500">
         The process
       </h1>
-      <div className="flex flex-col items-center justify-center w-full gap-6 py-24 mx-auto max-w-7xl md:flex-row md:px-20">
+      <div className="flex flex-col items-center justify-center gap-6 md:flex-row">
         {/* Left Side - Image */}
-        <div className="flex items-center justify-center flex-1 w-full md:w-1/2">
-          <div className="relative flex items-center justify-center w-full h-full">
+        <div className="flex w-full flex-1 items-center justify-center md:w-1/2">
+          <div className="relative flex h-full w-full items-center justify-center">
             <Image
               src={
                 openIndex !== null
@@ -68,7 +68,7 @@ export default function Skills() {
         </div>
 
         {/* Right Side - Accordion */}
-        <div className="flex-1 w-full space-y-4 md:w-1/2">
+        <div className="w-full flex-1 space-y-4 md:w-1/2">
           {accordionData.map((item, index) => (
             <div
               key={index}
@@ -78,7 +78,7 @@ export default function Skills() {
             >
               <button
                 onClick={() => toggleAccordion(index)}
-                className="flex items-center justify-between w-full p-4 font-sans text-3xl font-medium tracking-tight text-left transition bg-zinc-800 hover:bg-zinc-900"
+                className="flex w-full items-center justify-between bg-zinc-800 p-4 text-left font-sans text-3xl font-medium tracking-tight transition hover:bg-zinc-900"
               >
                 {item.title}
                 <span className="text-xl">
@@ -96,7 +96,7 @@ export default function Skills() {
                 transition={{ duration: 0.2, ease: "easeInOut" }}
                 className="overflow-hidden"
               >
-                <p className="p-4 font-sans text-base font-light tracking-tight bg-zinc-800">
+                <p className="bg-zinc-800 p-4 font-sans text-xl font-light tracking-tight md:text-xl">
                   {item.content}
                 </p>
               </motion.div>
