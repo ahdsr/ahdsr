@@ -3,7 +3,6 @@
 import HeroCaseStudy from "@/components/HeroCaseStudy";
 import ProjectNavigation from "@/components/ProjectNavigation";
 import AnimatedImage from "@/components/AnimatedImage";
-import Summary from "@/components/Summary";
 import { usePathname } from "next/navigation";
 
 const caseStudies = [
@@ -199,7 +198,6 @@ export default function CodeConnect() {
           nextProject={nextProject}
         />
       </div>
-      <Summary />
     </>
   );
 }

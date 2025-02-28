@@ -3,6 +3,8 @@
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation"; // Import usePathname to detect the current route
 import { motion, AnimatePresence } from "framer-motion";
+import { Button } from "@headlessui/react";
+import MotionButton from "./Button";
 import Link from "next/link";
 
 export default function Navbar() {
@@ -63,18 +65,19 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Navigation */}
-        <div className="hidden space-x-6 font-sans text-sm md:flex md:text-base">
-          <Link href="/" className="hover:text-gray-300">
-            Home
+        <div className="mt-2 hidden space-x-4 font-sans text-sm md:flex md:text-base">
+          <Link href="/">
+            <MotionButton text="Home" size="regular" />
           </Link>
+
           {/* <Link href="/about" className="hover:text-gray-300">
             About
           </Link> */}
-          <Link href="/work" className="hover:text-gray-300">
-            Work
+          <Link href="/work">
+            <MotionButton text="Contact" size="regular" />
           </Link>
-          <Link href="/contact" className="hover:text-gray-300">
-            Contact
+          <Link href="/contact">
+            <MotionButton text="Contact" size="regular" />
           </Link>
         </div>
 

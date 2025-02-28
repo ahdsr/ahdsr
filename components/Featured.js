@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 import Button from "./Button";
+import MotionButton from "./Button";
 import Link from "next/link";
 
 // Define multiple sections with their own projects
@@ -108,8 +109,20 @@ export default function Featured({ sectionList = sections }) {
                 <div className="flex flex-col items-start gap-6 md:flex-row">
                   {/* Left Column - Number & CTA Button */}
                   <div className="flex items-center space-x-4 md:flex-1">
-                    <Button text={number} />
-                    <Button text={cta} />
+                    <MotionButton
+                      text={number}
+                      bgColor="gray"
+                      textColor="black"
+                      hoverBgColor="black"
+                      hoverTextColor="white"
+                    />
+                    <MotionButton
+                      text={cta}
+                      bgColor="gray"
+                      textColor="black"
+                      hoverBgColor="black"
+                      hoverTextColor="white"
+                    />
                   </div>
 
                   {/* Right Column - Title & Description */}
