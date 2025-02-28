@@ -51,12 +51,12 @@ export default function Hero() {
             solve real problems. By combining research, creativity, and
             technology, I create intuitive experiences that drive engagement,
             efficiency, and impact.
-            <Link href="/blog " className="mt-4">
+            {/* <Link href="/blog " className="mt-4">
               <Button
                 className="rounded-lg bg-blue-600 px-6 py-3 text-white hover:bg-blue-500"
                 text="More on me"
               />
-            </Link>
+            </Link> */}
           </motion.p>
         </div>
       </div>

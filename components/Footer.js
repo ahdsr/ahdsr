@@ -1,8 +1,8 @@
 export default function Footer() {
   return (
-    <div className="w-full mx-auto bg-white">
+    <div className="mx-auto w-full bg-white">
       <footer className="border-t border-t-zinc-200">
-        <div className="container w-full px-8 py-24 mx-auto max-w-7xl sm:px-20">
+        <div className="container mx-auto w-full max-w-7xl px-8 py-24 sm:px-20">
           <div className="overflow-hidden">
             <h1 className="max-w-5xl pb-2 font-sans text-6xl font-semibold tracking-tighter text-black">
               Let's work together
@@ -16,20 +16,25 @@ export default function Footer() {
                 Find me on
               </h3>
               <ul className="mt-2 space-y-2 text-gray-600">
-                <li>
+                {/* <li>
                   <a href="#">Instagram</a>
                 </li>
                 <li>
                   <a href="#">Facebook</a>
-                </li>
+                </li> */}
                 <li>
-                  <a href="#">LinkedIn</a>
+                  <a
+                    href="https://www.linkedin.com/in/lucasczuchraj/"
+                    target="_blank"
+                  >
+                    LinkedIn
+                  </a>
                 </li>
               </ul>
             </div>
 
             {/* Column 2 */}
-            <div>
+            {/* <div>
               <h3 className="text-lg font-semibold text-indigo-500">Other</h3>
               <ul className="mt-2 space-y-2 text-gray-600">
                 <li>
@@ -42,11 +47,11 @@ export default function Footer() {
                   <a href="#">FAQs</a>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
 
           {/* Bottom text */}
-          <div className="mt-12 font-sans text-xs text-left text-gray-500">
+          <div className="mt-12 text-left font-sans text-xs text-gray-500">
             © {new Date().getFullYear()} Lucas Czuchraj
           </div>
         </div>
