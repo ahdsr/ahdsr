@@ -27,7 +27,7 @@ export default function ContactPage() {
     <>
       <HeroContact />
       <div className="mx-auto max-w-7xl px-8 pb-96 sm:px-20">
-        <div className="flex flex-row gap-20">
+        <div className="flex flex-col gap-20 md:flex-row">
           <div>
             <h2 className="mb-8 flex-1 font-sans text-4xl font-bold tracking-tighter text-zinc-600">
               Got ideas? I've got the skills.

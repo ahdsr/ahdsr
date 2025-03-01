@@ -29,7 +29,7 @@ export default function HeroContact() {
               stiffness: 100,
               damping: 10,
             }} // Smooth easing
-            className="mt-24 max-w-5xl font-sans text-9xl font-semibold tracking-tighter text-black"
+            className="mt-24 max-w-5xl font-sans text-8xl font-semibold tracking-tighter text-black md:text-9xl"
           >
             Contact
           </motion.h1>
