@@ -3,6 +3,8 @@
 import HeroCaseStudy from "@/components/HeroCaseStudy";
 import ProjectNavigation from "@/components/ProjectNavigation";
 import AnimatedImage from "@/components/AnimatedImage";
+import VideoSection from "@/components/VideoSection";
+import ParallaxSection from "@/components/ParallaxSection";
 import { usePathname } from "next/navigation";
 
 const caseStudies = [
@@ -33,155 +35,84 @@ export default function CodeConnect() {
       />
 
       <div className="px-8 sm:px-20">
-        {/* Summary */}
-        <div className="mx-auto flex max-w-7xl flex-col gap-8 py-12 md:flex-row md:py-24">
-          <div className="flex-1 font-sans text-xl font-light tracking-tighter text-zinc-600 md:text-2xl">
+        {/* Intro */}
+        <div className="mx-auto flex flex-col gap-8 border-t border-t-zinc-300 py-12 font-sans md:flex-row md:py-24">
+          <div className="flex-1 text-xl font-light tracking-normal text-zinc-600 md:text-2xl md:font-thin">
+            Project Alchemy is an AI-powered tool designed to streamline and
+            enhance meeting documentation. Initially developed to solve the
+            challenge of capturing and organizing discussions, it enables users
+            to efficiently generate summaries, extract key insights, and
+            retrospectively review meeting transcripts. Unlike traditional
+            note-taking methods, Project Alchemy leverages AI to reduce manual
+            effort, ensuring that important conversations are documented without
+            disrupting workflow.
+          </div>
+          <div className="mb-8 text-5xl font-medium tracking-tighter text-zinc-800">
             <div className="mb-4">
-              <p className="font-sans text-sm font-light tracking-tighter text-zinc-400">
+              <p className="font-sans text-lg font-light tracking-tighter text-zinc-600 md:text-xl">
                 Client
               </p>
-              <p className="font-sans text-xl font-light tracking-tighter text-zinc-600 md:text-2xl">
-                FIS Global
+              <p className="font-sans text-lg font-medium tracking-tighter text-zinc-600 md:text-xl">
+                ARL
               </p>
             </div>
             <div className="mb-4">
-              <p className="font-sans text-sm font-light tracking-tighter text-zinc-400">
+              <p className="font-sans text-lg font-light tracking-tighter text-zinc-600 md:text-xl">
                 Role
               </p>
-              <p className="font-sans text-xl font-light tracking-tighter text-zinc-600 md:text-2xl">
+              <p className="font-sans text-lg font-medium tracking-tighter text-zinc-600 md:text-xl">
                 Product & UX Design
               </p>
             </div>
             <div className="mb-4">
-              <p className="font-sans text-sm font-light tracking-tighter text-zinc-400">
+              <p className="font-sans text-lg font-light tracking-tighter text-zinc-600 md:text-xl">
                 Duration
               </p>
-              <p className="font-sans text-xl font-light tracking-tighter text-zinc-600 md:text-2xl">
-                6 months
+              <p className="font-sans text-lg font-medium tracking-tighter text-zinc-600 md:text-xl">
+                4 weeks
               </p>
             </div>
           </div>
-          <div className="flex-1 font-sans text-xl font-light tracking-tighter text-zinc-600 md:text-2xl">
-            FIS Code Connect is an API marketplace offering 700+ open APIs for
-            seamless integration of banking, payments, fraud prevention, and
-            more. It enables businesses to innovate quickly, streamline
-            operations, and enhance digital experiences. An independent study
-            found it delivers a 193% ROI over three years, proving its financial
-            and efficiency benefits.
+        </div>
+        {/* My Role & Team */}
+        <div className="mx-auto flex flex-col gap-8 border-t border-t-zinc-300 py-12 font-sans md:flex-row md:py-24">
+          <div className="mb-8 flex-1 text-5xl font-medium tracking-tighter text-zinc-800">
+            My role & team
+          </div>
+          <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
+            My role on our small team is project strategy, vision, and of course
+            my UX and UI expertise.
           </div>
         </div>
 
         {/* Homepage Section */}
         <div className="mx-auto flex max-w-7xl flex-col border-t border-t-zinc-300 py-12 md:flex-row md:py-24">
           <div className="mb-8 flex-1 font-sans text-5xl font-medium tracking-tighter text-zinc-800">
-            Homepage
+            Concept creation
           </div>
           <div className="flex-1 font-sans tracking-tight text-zinc-600 md:text-base">
-            The homepage lacked clear direction, leaving users unsure of where
-            to navigate next. Developers, in particular, found the content too
-            marketing-heavy, making it difficult to quickly access the
-            information they needed.
-            <ul className="mt-8">
-              <li className="border-b border-b-zinc-300 py-4">
-                Improved navigation and information hierarchy
-              </li>
-              <li className="border-b border-b-zinc-300 py-4">
-                Prominent display of platform announcements
-              </li>
-              <li className="border-b border-b-zinc-300 py-4">
-                Clear labels for main navigation items such as Home, Catalog,
-                and Help Center - removing ambiguous labels
-              </li>
-            </ul>
+            Project Alchemy is not just another AI-powered meeting documentation
+            tool—it’s the bridge between conversations and real, working
+            projects. Unlike existing solutions like Otter.ai, Tactiq, or
+            Sembly, which focus primarily on summarization, Project Alchemy is
+            designed with the next step in mind: turning documentation into
+            actionable, AI-driven execution. Our goal is to create structured,
+            AI-optimized documentation that seamlessly integrates with tools
+            like Cursor and Aider, allowing teams to transform discussions into
+            fully developed working code. By enhancing documentation quality and
+            context, Project Alchemy enables AI agents to generate, refine, and
+            execute projects with minimal human intervention. This means faster
+            iteration cycles, reduced development overhead, and a direct path
+            from ideation to implementation. With a focus on precision,
+            structure, and AI-driven workflow automation, Project Alchemy is not
+            just about keeping records—it’s about accelerating innovation.
           </div>
         </div>
-
-        <AnimatedImage
-          src="/images/featured/codeconnect/Homepage-Original.png"
-          label="Original"
+        <VideoSection
+          videoSrc="/videos/projectalchemy.mp4"
+          overlay={true}
+          overlayText=""
         />
-        <AnimatedImage
-          src="/images/featured/codeconnect/Homepage-New.png"
-          label="Redesigned"
-          delay={0.3}
-        />
-        {/* Dashboards */}
-        <div className="mx-auto flex max-w-7xl flex-col py-12 md:flex-row md:py-24">
-          <div className="mb-8 flex-1 font-sans text-5xl font-medium tracking-tighter text-zinc-800">
-            Dashboards
-          </div>
-          <div className="flex-1 font-sans tracking-tight text-zinc-600 md:text-base">
-            The new Dashboard Page provides users with a comprehensive view of
-            their usage trends and financial forecasts, enabling better
-            decision-making. Users can now track key metrics, analyze past usage
-            patterns, and anticipate future costs based on historical data,
-            helping them stay informed and proactive in managing their
-            resources.
-          </div>
-        </div>
-        {/* Dashboard Section */}
-        <AnimatedImage
-          src="/images/featured/codeconnect/Dashboard-New.png"
-          label="Added"
-          delay={0.3}
-        />
-        <AnimatedImage
-          src="/images/featured/codeconnect/Dashboard2-New.png"
-          label="Added"
-          delay={0.3}
-        />
-        {/* Product Catalog */}
-        <div className="mx-auto flex max-w-7xl flex-col py-12 md:flex-row md:py-24">
-          <div className="mb-8 flex-1 font-sans text-5xl font-medium tracking-tighter text-zinc-800">
-            Product Catalog
-          </div>
-          <div className="flex-1 font-sans tracking-tight text-zinc-600 md:text-base">
-            The new Product Catalog has been optimized for efficiency and ease
-            of use, reducing the product list from 100+ to 30 for a more focused
-            experience. Users can now toggle between their client-specific
-            catalog and the public catalog, ensuring they see only the most
-            relevant products. Additionally, a search function has been
-            introduced, allowing users to quickly find specific products,
-            improving navigation and overall usability.
-          </div>
-        </div>
-        {/* Product Catalog Section */}
-        <AnimatedImage
-          src="/images/featured/codeconnect/ProductCatalog-Original.png"
-          label="Original"
-          delay={0.3}
-        />
-        <AnimatedImage
-          src="/images/featured/codeconnect/ProductCatalog-New.png"
-          label="Redesigned"
-          delay={0.3}
-        />
-        {/* Point 3 */}
-        <div className="mx-auto flex max-w-7xl flex-col py-12 md:flex-row md:py-24">
-          <div className="mb-8 flex-1 font-sans text-4xl font-medium tracking-tighter text-zinc-800 md:flex-row"></div>
-          <div className="flex-1 font-sans tracking-tight text-zinc-600 md:text-base">
-            <ul className="mt-8">
-              <li className="border-b border-b-zinc-300 py-4">
-                Toggle for My Solutions, allows useres to quickly only see a
-                subset of the catalog
-              </li>
-              <li className="border-b border-b-zinc-300 py-4">
-                Favorites serves as bookmarked solutions
-              </li>
-              <li className="border-b border-b-zinc-300 py-4">
-                Inline search for users who are returning and know what they are
-                looking for
-              </li>
-            </ul>
-          </div>
-        </div>
-        <AnimatedImage
-          src="/images/featured/codeconnect/ProductCatalog2-New.png"
-          label="Final"
-          delay={0.3}
-        />
-
-        {/* Next & Previous Project Navigation */}
         <ProjectNavigation
           prevProject={prevProject}
           nextProject={nextProject}
