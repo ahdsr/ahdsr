@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 import Link from "next/link";
+import MotionButton from "./Button";
 
 // Define multiple sections with their own projects
 const sections = [
@@ -108,19 +109,18 @@ export default function Work() {
   return (
     <section className="mx-auto max-w-7xl" id="trigger-section">
       {/* Filter Buttons */}
-      <div className="justify-left mb-12 flex space-x-4">
+      <div className="justify-left mb-12 mt-8 flex space-x-4">
         {["All", "Use Cases", "Conceptual & Pitches", "3D"].map((category) => (
-          <button
+          <MotionButton
             key={category}
+            text={category}
             onClick={() => setSelectedCategory(category)}
-            className={`mt-8 rounded-full px-3 py-1 font-sans text-sm tracking-tight hover:bg-black hover:text-white ${
-              selectedCategory === category
-                ? "bg-black text-white"
-                : "bg-zinc-400 text-white"
-            }`}
-          >
-            {category}
-          </button>
+            bgColor={selectedCategory === category ? "black" : "gray"}
+            textColor={selectedCategory === category ? "white" : "white"}
+            hoverBgColor="black"
+            hoverTextColor="white"
+            size="regular"
+          />
         ))}
       </div>
 
