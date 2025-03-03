@@ -57,13 +57,13 @@ const sections = [
         image: "/images/featured/beon/BEON_Thumb.png",
         bgColor: "bg-blue-500",
       },
-      // {
-      //   title: "Project Alchemy",
-      //   description: "Product & UX Design",
-      //   link: "/casestudies/projectalchemy",
-      //   image: "/images/featured/projectalchemy/ProjectAlchemy_Thumb.png",
-      //   bgColor: "bg-orange-500",
-      // },
+      {
+        title: "Project Alchemy",
+        description: "Product & UX Design",
+        link: "/casestudies/projectalchemy",
+        image: "/images/featured/projectalchemy/ProjectAlchemy_Thumb.png",
+        bgColor: "bg-orange-500",
+      },
     ],
   },
   {
@@ -79,13 +79,7 @@ const sections = [
         image: "/images/other/RoomRender_Thumb.png",
         bgColor: "bg-blue-500",
       },
-      {
-        title: "Rendering",
-        description: "Blender, Rendering",
-        link: "/work/3d",
-        image: "/images/other/RoomRender_Thumb.png",
-        bgColor: "bg-blue-500",
-      },
+
       // {
       //   title: "Project visualization",
       //   description: "Blender, Rendering",
