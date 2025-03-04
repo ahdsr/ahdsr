@@ -47,6 +47,7 @@ export default function Navbar() {
       "bg-black  border-b border-b-zinc-700 text-white shadow-xl",
     "/casestudies/quest": "bg-green-700 text-white shadow-xl",
     "/casestudies/tddashboards": "bg-green-700 text-black shadow-xl",
+    "/casestudies/tdbillmanager": "bg-green-700 text-black shadow-xl",
     "/work/3d": "bg-teal-700 text-white",
   };
 
