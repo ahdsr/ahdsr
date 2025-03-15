@@ -3,9 +3,10 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
-import Button from "./Button";
 import MotionButton from "./Button";
 import Link from "next/link";
+import { useState } from "react";
+import PlusButton from "./PlusButton";
 
 // Define multiple sections with their own projects
 const sections = [
@@ -150,21 +151,39 @@ export default function Featured({ sectionList = sections }) {
                     <div
                       className={`relative h-64 w-full overflow-hidden ${project.bgColor}`}
                     >
-                      <Link href={project.link}>
-                        <motion.div
-                          className="h-full w-full"
-                          initial={{ scale: 1 }}
-                          whileHover={{ scale: 1.1 }}
-                          transition={{ duration: 0.2, ease: "easeOut" }}
-                        >
-                          <Image
-                            src={project.image}
-                            alt={project.title}
-                            fill
-                            className="object-cover"
-                          />
-                        </motion.div>
-                      </Link>
+                      <div className="relative h-full w-full">
+                        {/* Using useState to track hover state for the entire container */}
+                        {(() => {
+                          const [isHovered, setIsHovered] = useState(false);
+                          return (
+                            <>
+                              <Link href={project.link}>
+                                <motion.div
+                                  className="h-full w-full"
+                                  initial={{ scale: 1 }}
+                                  whileHover={{ scale: 1.1 }}
+                                  transition={{
+                                    duration: 0.2,
+                                    ease: "easeOut",
+                                  }}
+                                  onMouseEnter={() => setIsHovered(true)}
+                                  onMouseLeave={() => setIsHovered(false)}
+                                >
+                                  <Image
+                                    src={project.image}
+                                    alt={project.title}
+                                    fill
+                                    className="object-cover"
+                                  />
+                                </motion.div>
+                              </Link>
+
+                              {/* Plus Sign Button - Outside motion.div so it doesn't scale */}
+                              <PlusButton isHovered={isHovered} />
+                            </>
+                          );
+                        })()}
+                      </div>
                     </div>
 
                     {/* Text Below */}

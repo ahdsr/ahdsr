@@ -4,11 +4,11 @@ export default function AboutPage() {
   return (
     <>
       <HeroSection
-        backgroundColor="bg-green-500"
-        paddingTop="pt-24"
-        paddingBottom="pb-24"
-        heading="This is large heading"
-        headingHighlight=" with why text."
+        backgroundColor="bg-red-500"
+        paddingTop="pt-12"
+        paddingBottom="pb-12"
+        heading="Cline is the shit!"
+        headingHighlight=" Eat your heart out JR Developer."
         headingHighlightColor="text-white"
         headingSize="text-7xl"
         headingWeight="font-semibold"

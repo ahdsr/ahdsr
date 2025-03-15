@@ -49,6 +49,7 @@ export default function Navbar() {
     "/casestudies/tddashboards": "bg-green-700 text-black shadow-xl",
     "/casestudies/tdbillmanager": "bg-green-700 text-black shadow-xl",
     "/work/3d": "bg-teal-700 text-white",
+    "/examples/fullscreen-background": "bg-black text-white",
   };
 
   return (
