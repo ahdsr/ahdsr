@@ -1,11 +1,62 @@
 "use client";
 
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 import Link from "next/link";
 import MotionButton from "./Button";
+
+// Animation variants
+const sectionContainerVariants = {
+  hidden: { opacity: 1 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.3, // Longer stagger between sections
+      delayChildren: 0.1,
+    },
+  },
+};
+
+const sectionVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+      staggerChildren: 0.15, // Stagger between projects in a section
+      delayChildren: 0.1,
+    },
+  },
+  exit: {
+    opacity: 0,
+    transition: {
+      duration: 0.3,
+      ease: "easeIn",
+    },
+  },
+};
+
+const projectVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+      ease: "easeOut",
+    },
+  },
+  exit: {
+    opacity: 0,
+    y: -20,
+    transition: {
+      duration: 0.3,
+      ease: "easeIn",
+    },
+  },
+};
 
 // Define multiple sections with their own projects
 const sections = [
@@ -132,59 +183,83 @@ export default function Work() {
       </div>
 
       {/* Display Filtered Sections */}
-      {filteredSections.map((section, sectionIndex) => (
-        <div key={sectionIndex} className="border-t border-t-zinc-300 pt-16">
-          {/* Section Title */}
-          <div className="mb-8 overflow-hidden">
-            <h2 className="pb-4 font-sans text-3xl font-semibold tracking-tighter text-zinc-800">
-              {section.title}
-            </h2>
-          </div>
-
-          {/* Section Description */}
-          <p
-            ref={ref}
-            className="s mb-12 font-sans text-lg tracking-tight text-gray-600"
-          >
-            {section.description}
-          </p>
-
-          {/* Project List */}
-          <div className="mb-48 grid grid-cols-1 gap-8 md:grid-cols-2">
-            {section.projects.map((project, projectIndex) => (
-              <div key={projectIndex} className="flex w-full flex-col">
-                <div
-                  className={`relative h-64 w-full overflow-hidden ${project.bgColor} flex-grow`}
-                >
-                  <Link href={project.link}>
-                    <motion.div
-                      className="h-full w-full"
-                      initial={{ scale: 1 }}
-                      whileHover={{ scale: 1.1 }}
-                      transition={{ duration: 0.3, ease: "easeOut" }}
-                    >
-                      <Image
-                        src={project.image}
-                        alt={project.title}
-                        fill
-                        className="object-cover"
-                      />
-                    </motion.div>
-                  </Link>
-                </div>
-
-                {/* Project Title & Description */}
-                <h3 className="mt-2 font-light text-zinc-800">
-                  {project.title}
-                </h3>
-                <p className="w-full font-light text-zinc-400">
-                  {project.description}
-                </p>
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={selectedCategory}
+          variants={sectionContainerVariants}
+          initial="hidden"
+          animate="visible"
+          exit="hidden"
+        >
+          {filteredSections.map((section, sectionIndex) => (
+            <motion.div
+              key={`${section.category}-${sectionIndex}`}
+              className="border-t border-t-zinc-300 pt-16"
+              variants={sectionVariants}
+              initial="hidden"
+              animate="visible"
+              exit="exit"
+            >
+              {/* Section Title */}
+              <div className="mb-8 overflow-hidden">
+                <h2 className="pb-4 font-sans text-3xl font-semibold tracking-tighter text-zinc-800">
+                  {section.title}
+                </h2>
               </div>
-            ))}
-          </div>
-        </div>
-      ))}
+
+              {/* Section Description */}
+              <p
+                ref={ref}
+                className="s mb-12 font-sans text-lg tracking-tight text-gray-600"
+              >
+                {section.description}
+              </p>
+
+              {/* Project List */}
+              <motion.div
+                className="mb-48 grid grid-cols-1 gap-8 md:grid-cols-2"
+                variants={sectionVariants}
+              >
+                {section.projects.map((project, projectIndex) => (
+                  <motion.div
+                    key={`${project.title}-${projectIndex}`}
+                    className="flex w-full flex-col"
+                    variants={projectVariants}
+                  >
+                    <div
+                      className={`relative h-64 w-full overflow-hidden ${project.bgColor} flex-grow`}
+                    >
+                      <Link href={project.link}>
+                        <motion.div
+                          className="h-full w-full"
+                          initial={{ scale: 1 }}
+                          whileHover={{ scale: 1.1 }}
+                          transition={{ duration: 0.3, ease: "easeOut" }}
+                        >
+                          <Image
+                            src={project.image}
+                            alt={project.title}
+                            fill
+                            className="object-cover"
+                          />
+                        </motion.div>
+                      </Link>
+                    </div>
+
+                    {/* Project Title & Description */}
+                    <h3 className="mt-2 font-light text-zinc-800">
+                      {project.title}
+                    </h3>
+                    <p className="w-full font-light text-zinc-400">
+                      {project.description}
+                    </p>
+                  </motion.div>
+                ))}
+              </motion.div>
+            </motion.div>
+          ))}
+        </motion.div>
+      </AnimatePresence>
     </section>
   );
 }

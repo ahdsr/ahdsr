@@ -13,7 +13,7 @@ const sections = [
   {
     title: "Client digital products",
     description:
-      "From concept to launch, this category showcases comprehensive client work—covering everything from initial strategy and UX/UI design to full-scale front-end and back-end development. Whether partnering with startups or established businesses, these projects reflect a seamless process of transforming ideas into fully realized digital products.",
+      "This category highlights end-to-end client projects, from strategy and UX/UI design to full front-end and back-end development. Whether for startups or established businesses, these projects showcase the seamless transformation of ideas into digital products.",
     cta: "Learn more",
     number: "1",
     projects: [
@@ -131,7 +131,7 @@ export default function Featured({ sectionList = sections }) {
                     <h2 className="pb-4 text-left font-sans text-3xl font-semibold tracking-tighter text-zinc-800 md:text-5xl">
                       {title}
                     </h2>
-                    <p className="mt-4 pb-4 text-left font-sans text-xl tracking-tight text-zinc-600">
+                    <p className="mt-4 pb-4 text-left font-sans text-xl font-light tracking-tight text-zinc-600">
                       {description}
                     </p>
                   </div>
