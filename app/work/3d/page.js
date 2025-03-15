@@ -1,6 +1,6 @@
 "use client";
 
-import HeroCaseStudy from "@/components/HeroCaseStudy";
+import HeroSection from "@/components/HeroSection";
 import ImageGallery from "@/components/ImageGallery";
 
 // Define your images array here
@@ -19,15 +19,28 @@ const images = [
   // Add more image paths as needed
 ];
 
-export default function ContactPage() {
+export default function ThreeDPage() {
   return (
     <>
-      <HeroCaseStudy
-        title="3D Rendering"
-        subtitle="Modeling & 3D"
-        description="UX Design"
-        backgroundImage="/images/other/3D_Hero.png"
-        bgColor="bg-green-700"
+      <HeroSection
+        backgroundColor="bg-green-700"
+        paddingTop="pt-24"
+        paddingBottom="pb-24"
+        heading="3D Rendering"
+        headingSize="text-4xl sm:text-7xl"
+        headingWeight="font-semibold"
+        headingTracking="tracking-tighter"
+        headingHighlight="Modeling & 3D"
+        headingHighlightColor="text-gray-300"
+        secondHighlight="UX Design"
+        secondHighlightColor="text-gray-300"
+        paragraphSize="text-base"
+        paragraphWeight="font-light"
+        paragraphColor="text-gray-300"
+        image="/images/other/3D_Hero.png"
+        imageAlt="3D Rendering Hero"
+        imageWidth={1920}
+        imageHeight={1080}
       />
       <div className="mx-auto max-w-7xl px-8 sm:px-20">
         {/* My Role & Team */}

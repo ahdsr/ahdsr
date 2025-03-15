@@ -1,10 +1,9 @@
 "use client";
 
-import HeroCaseStudy from "@/components/HeroCaseStudy";
+import HeroSection from "@/components/HeroSection";
 import ProjectNavigation from "@/components/ProjectNavigation";
-import AnimatedImage from "@/components/AnimatedImage";
 import VideoSection from "@/components/VideoSection";
-import ParallaxSection from "@/components/ParallaxSection";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 const caseStudies = [
@@ -14,7 +13,7 @@ const caseStudies = [
   { slug: "projectalchemy", title: "Project Alchemy" },
 ];
 
-export default function CodeConnect() {
+export default function ProjectAlchemy() {
   const pathname = usePathname();
   const currentSlug = pathname.split("/").pop();
   const currentIndex = caseStudies.findIndex(
@@ -26,13 +25,36 @@ export default function CodeConnect() {
 
   return (
     <>
-      <HeroCaseStudy
-        title="Alchemy."
-        subtitle="Product Design"
-        description="UX Design"
-        backgroundImage="/images/featured/codeconnect/UseCase_Hero.png"
-        bgColor="bg-orange-500"
-      />
+      <div className="relative">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/featured/projectalchemy/UseCase_Hero.png"
+            alt="Project Alchemy Hero"
+            fill
+            priority
+            className="object-cover"
+          />
+        </div>
+        <div className="relative z-10">
+          <HeroSection
+            backgroundColor="bg-orange-500 bg-opacity-80"
+            paddingTop="pt-24"
+            paddingBottom="pb-24"
+            heading="Alchemy."
+            headingSize="text-4xl sm:text-7xl"
+            headingWeight="font-semibold"
+            headingTracking="tracking-tighter"
+            headingHighlight="Product Design"
+            headingHighlightColor="text-gray-300"
+            secondHighlight="UX Design"
+            secondHighlightColor="text-gray-300"
+            paragraph="AI-powered tool designed to streamline and enhance meeting documentation."
+            paragraphSize="text-base"
+            paragraphWeight="font-light"
+            paragraphColor="text-gray-300"
+          />
+        </div>
+      </div>
 
       <div className="px-8 sm:px-20">
         {/* Intro */}

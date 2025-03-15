@@ -1,8 +1,9 @@
 "use client";
 
-import HeroCaseStudy from "@/components/HeroCaseStudy";
+import HeroSection from "@/components/HeroSection";
 import ProjectNavigation from "@/components/ProjectNavigation";
 import AnimatedImage from "@/components/AnimatedImage";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 const caseStudies = [
@@ -24,13 +25,32 @@ export default function CodeConnect() {
 
   return (
     <>
-      <HeroCaseStudy
-        title="Code Connect."
-        subtitle="Product Design"
-        description="UX Design"
-        backgroundImage="/images/featured/codeconnect/UseCase_Hero.png"
-        bgColor="bg-emerald-500"
-      />
+      <div className="relative">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/featured/codeconnect/UseCase_Hero.png"
+            alt="Code Connect Hero"
+            fill
+            priority
+            className="object-cover"
+          />
+        </div>
+        <div className="relative z-10">
+          <HeroSection
+            backgroundColor="bg-emerald-500 bg-opacity-80"
+            paddingTop="pt-24"
+            paddingBottom="pb-64"
+            heading="Code Connect"
+            headingSize="text-4xl sm:text-7xl"
+            headingWeight="font-semibold"
+            headingTracking="tracking-tighter"
+            paragraph="UX/Product Design"
+            paragraphSize="text-base"
+            paragraphWeight="font-light"
+            paragraphColor="text-gray-300"
+          />
+        </div>
+      </div>
 
       <div className="mx-auto max-w-7xl px-8 sm:px-20">
         {/* Intro */}

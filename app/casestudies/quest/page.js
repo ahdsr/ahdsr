@@ -1,8 +1,9 @@
 "use client";
 
-import HeroCaseStudy from "@/components/HeroCaseStudy";
+import HeroSection from "@/components/HeroSection";
 import ProjectNavigation from "@/components/ProjectNavigation";
 import AnimatedImage from "@/components/AnimatedImage";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 const caseStudies = [
@@ -12,7 +13,7 @@ const caseStudies = [
   { slug: "projectalchemy", title: "Project Alchemy" },
 ];
 
-export default function CodeConnect() {
+export default function Quest() {
   const pathname = usePathname();
   const currentSlug = pathname.split("/").pop();
   const currentIndex = caseStudies.findIndex(
@@ -24,13 +25,33 @@ export default function CodeConnect() {
 
   return (
     <>
-      <HeroCaseStudy
-        title="Quest."
-        subtitle="Product Design"
-        description="UX Design"
-        backgroundImage="/images/featured/quest/Quest_Hero.png"
-        bgColor="bg-green-700"
-      />
+      <div className="relative">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/featured/quest/Quest_Hero.png"
+            alt="Quest Insurance Hero"
+            fill
+            priority
+            className="object-cover"
+          />
+        </div>
+        <div className="relative z-10">
+          <HeroSection
+            backgroundColor="bg-green-700 bg-opacity-10"
+            paddingTop="pt-24"
+            paddingBottom="pb-64"
+            heading="Quest Insurance"
+            headingColor="text-black"
+            headingSize="text-4xl sm:text-7xl"
+            headingWeight="font-semibold"
+            headingTracking="tracking-tighter"
+            paragraph="UX/Product Design"
+            paragraphSize="text-base"
+            paragraphWeight="font-light"
+            paragraphColor="text-black"
+          />
+        </div>
+      </div>
 
       <div className="mx-auto max-w-7xl px-8 sm:px-20">
         {/* Intro */}

@@ -20,6 +20,7 @@ export default function HeroSection({
   headingSize = "text-6xl md:text-7xl",
   headingWeight = "font-black",
   headingTracking = "tracking-[-0.08em]",
+  headingColor = "text-white",
   paragraphSize = "text-xl",
   paragraphWeight = "font-normal",
   image = null, // Optional image path
@@ -48,36 +49,72 @@ export default function HeroSection({
       return heading;
     }
 
-    const parts = heading.split(headingHighlight || "");
-
-    if (!secondHighlight) {
-      return (
-        <>
-          {parts[0]}
-          {headingHighlight && (
-            <span className={headingHighlightColor}> {headingHighlight}</span>
-          )}
-          {parts[1]}
-        </>
-      );
+    // If we have a heading highlight but no second highlight
+    if (headingHighlight && !secondHighlight) {
+      // Check if the heading contains the highlight text
+      if (heading.includes(headingHighlight)) {
+        const parts = heading.split(headingHighlight);
+        return (
+          <>
+            {parts[0]}
+            <span className={headingHighlightColor}>{headingHighlight}</span>
+            {parts[1] || ""}
+          </>
+        );
+      } else {
+        // If highlight text is not in heading, just append it
+        return (
+          <>
+            {heading}{" "}
+            <span className={headingHighlightColor}>{headingHighlight}</span>
+          </>
+        );
+      }
     }
 
-    // If there's a second highlight, we need to further split the second part
-    const secondParts = parts[1].split(secondHighlight || "");
+    // If we have both heading highlight and second highlight
+    if (headingHighlight && secondHighlight) {
+      // Check if the heading contains the highlight text
+      if (heading.includes(headingHighlight)) {
+        const parts = heading.split(headingHighlight);
 
-    return (
-      <>
-        {parts[0]}
-        {headingHighlight && (
-          <span className={headingHighlightColor}> {headingHighlight} </span>
-        )}
-        {secondParts[0]}
-        {secondHighlight && (
-          <span className={secondHighlightColor}>{secondHighlight}</span>
-        )}
-        {secondParts[1]}
-      </>
-    );
+        // Check if the second part contains the second highlight
+        if (parts[1] && parts[1].includes(secondHighlight)) {
+          const secondParts = parts[1].split(secondHighlight);
+          return (
+            <>
+              {parts[0]}
+              <span className={headingHighlightColor}>{headingHighlight}</span>
+              {secondParts[0]}
+              <span className={secondHighlightColor}>{secondHighlight}</span>
+              {secondParts[1] || ""}
+            </>
+          );
+        } else {
+          // If second highlight is not in the second part, just append it
+          return (
+            <>
+              {parts[0]}
+              <span className={headingHighlightColor}>{headingHighlight}</span>
+              {parts[1] || ""}{" "}
+              <span className={secondHighlightColor}>{secondHighlight}</span>
+            </>
+          );
+        }
+      } else {
+        // If highlight text is not in heading, just append both highlights
+        return (
+          <>
+            {heading}{" "}
+            <span className={headingHighlightColor}>{headingHighlight}</span>{" "}
+            <span className={secondHighlightColor}>{secondHighlight}</span>
+          </>
+        );
+      }
+    }
+
+    // Fallback
+    return heading;
   };
 
   return (
@@ -93,12 +130,12 @@ export default function HeroSection({
           initial={headingAnimation}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={headingTransition}
-          className={`mt-24 max-w-5xl font-sans ${headingSize} ${headingWeight} ${headingTracking} text-black`}
+          className={`mt-24 max-w-5xl font-sans ${headingSize} ${headingWeight} ${headingTracking} ${headingColor}`}
         >
           {renderHeading()}
         </motion.h1>
 
-        <div className="mt-6 flex h-full flex-row items-center justify-between space-x-8">
+        <div className="mt-6 flex h-full flex-row items-center justify-between">
           {image && (
             <div
               className={`relative h-[${imageHeight}px] w-[${imageWidth}px]`}

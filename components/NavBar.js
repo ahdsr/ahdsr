@@ -3,7 +3,6 @@
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation"; // Import usePathname to detect the current route
 import { motion, AnimatePresence } from "framer-motion";
-import { Button } from "@headlessui/react";
 import MotionButton from "./Button";
 import Link from "next/link";
 
@@ -41,13 +40,13 @@ export default function Navbar() {
     "/work": "bg-white text-black border-b border-b-zinc-300",
     "/contact": "bg-white text-black border-b border-b-zinc-300",
     "/blog": "bg-blue-800 text-white border-b border-b-zinc-300",
-    "/casestudies/codeconnect": "bg-emerald-500 text-black  shadow-xl",
-    "/casestudies/projectalchemy": "bg-orange-500 text-white shadow-xl",
-    "/casestudies/beon":
-      "bg-black  border-b border-b-zinc-700 text-white shadow-xl",
-    "/casestudies/quest": "bg-green-700 text-white shadow-xl",
-    "/casestudies/tddashboards": "bg-green-700 text-black shadow-xl",
-    "/casestudies/tdbillmanager": "bg-green-700 text-black shadow-xl",
+    "/casestudies/codeconnect": "bg-white text-black shadow-xl",
+    "/casestudies/projectalchemy": "bg-orange-500 text-black shadow-xl",
+    "/casestudies/beon": "bg-white text-black shadow-xl",
+    "/casestudies/quest": "bg-white text-black shadow-xl",
+    "/casestudies/tddashboards": "bg-white text-black shadow-xl",
+    "/casestudies/tdbillmanager": "bg-white text-black shadow-xl",
+    "/casestudies/beacon": "bg-white text-black shadow-xl",
     "/work/3d": "bg-teal-700 text-white",
     "/examples/fullscreen-background": "bg-black text-white",
   };

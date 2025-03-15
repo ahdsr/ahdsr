@@ -2,21 +2,8 @@
 
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import HeroContact from "@/components/HeroContact";
+import HeroSection from "@/components/HeroSection";
 import AnimatedImage from "@/components/AnimatedImage";
-// Define your images array here
-const images = [
-  "/images/other/LaptopRender_Thumb.png",
-  "/images/other/RoomRender_Thumb.png",
-  "/images/other/MK7_v005.png",
-  "/images/other/OrthoCity_v001.png",
-  "/images/other/OrthoCity_v002.png",
-  "/images/other/Random_v001.png",
-  "/images/other/Random_v002.png",
-  "/images/other/RoomRender.png",
-
-  // Add more image paths as needed
-];
 
 export default function ContactPage() {
   const { ref, inView } = useInView({
@@ -25,7 +12,23 @@ export default function ContactPage() {
   });
   return (
     <>
-      <HeroContact />
+      <HeroSection
+        backgroundColor="bg-white"
+        paddingTop="pt-12"
+        paddingBottom="pb-24"
+        heading="Contact"
+        headingColor="text-black"
+        headingSize="text-8xl md:text-9xl"
+        headingWeight="font-semibold"
+        headingTracking="tracking-[-10]"
+        initialAnimation={{ y: "100%" }}
+        mainTransition={{
+          duration: 0.3,
+          type: "spring",
+          stiffness: 100,
+          damping: 10,
+        }}
+      />
       <div className="mx-auto max-w-7xl px-8 pb-96 sm:px-20">
         <div className="flex flex-col gap-20 md:flex-row">
           <div>

@@ -1,9 +1,23 @@
-import HeroBlog from "@/components/HeroBlog";
+import HeroSection from "@/components/HeroSection";
 import Blog from "@/components/Blog";
 export default function BlogPage() {
   return (
     <>
-      <HeroBlog />
+      <HeroSection
+        backgroundColor="bg-blue-800"
+        paddingTop="pt-12"
+        paddingBottom="pb-64"
+        heading="Blog blog."
+        headingHighlight="blog"
+        headingHighlightColor="text-white"
+        paragraph="Thoughts, insights, and occasional design musings—sometimes profound, sometimes just me thinking out loud."
+        paragraphColor="text-white"
+        headingSize="text-7xl"
+        headingWeight="font-semibold"
+        headingTracking="tracking-tighter"
+        paragraphSize="text-3xl"
+        paragraphWeight="font-light"
+      />
       <div className="mx-auto max-w-7xl px-8 md:px-20">
         <div className="pt-12 font-sans text-zinc-700">
           <h1 className="mb-4 mt-24 border-b border-t-zinc-700 pb-4 font-sans text-9xl font-semibold tracking-tighter text-black">

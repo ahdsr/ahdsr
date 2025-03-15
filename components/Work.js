@@ -16,6 +16,13 @@ const sections = [
       "Transforming ideas into standout digital services with innovative UX, UI design, and full-stack development. From early-stage concepts to fully functional products, I craft seamless digital experiences that drive engagement and business success.",
     projects: [
       {
+        title: "Beacon Mobile",
+        description: "Design Systems",
+        link: "/casestudies/beacon",
+        image: "/images/featured/beacon/Beacon.png",
+        bgColor: "bg-blue-500",
+      },
+      {
         title: "Code Connect",
         description: "Site Redesign",
         link: "/casestudies/codeconnect",
@@ -27,13 +34,13 @@ const sections = [
         description: "Product Design",
         link: "/casestudies/quest",
         image: "/images/featured/quest/Quest_Thumb.png",
-        bgColor: "bg-indigo-500",
+        bgColor: "bg-yellow-500",
       },
       {
         title: "TD Dashboards",
         description: "Native App",
         link: "/casestudies/tddashboards",
-        image: "/images/featured/tddashboards/TDDash_hero.webp",
+        image: "/images/featured/tddashboards/Thumb.png",
         bgColor: "bg-indigo-500",
       },
       {
@@ -46,8 +53,8 @@ const sections = [
     ],
   },
   {
-    title: "Conceptual & Product Pitches",
-    category: "Conceptual & Pitches",
+    title: "Conceptual",
+    category: "Conceptual",
     description:
       "Exploring bold ideas—projects that started or remained as concepts beyond client work. These creative explorations push boundaries, challenge industry norms, and serve as a testing ground for fresh, innovative approaches to digital solutions.",
     projects: [
@@ -110,7 +117,7 @@ export default function Work() {
     <section className="mx-auto max-w-7xl" id="trigger-section">
       {/* Filter Buttons */}
       <div className="justify-left mb-12 mt-8 flex space-x-4">
-        {["All", "Use Cases", "Conceptual & Pitches", "3D"].map((category) => (
+        {["All", "Use Cases", "Conceptual", "3D"].map((category) => (
           <MotionButton
             key={category}
             text={category}

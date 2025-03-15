@@ -1,9 +1,10 @@
 "use client";
 
-import HeroCaseStudy from "@/components/HeroCaseStudy";
+import HeroSection from "@/components/HeroSection";
 import ProjectNavigation from "@/components/ProjectNavigation";
 import AnimatedImage from "@/components/AnimatedImage";
-import ImageGallery from "@/components/ImageCarousel";
+import ImageCarousel from "@/components/ImageCarousel";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 const caseStudies = [
@@ -25,7 +26,7 @@ const captions = [
   "Spider chat to easily illustate areas of strength and weaknesss",
 ];
 
-export default function CodeConnect() {
+export default function Beon() {
   const pathname = usePathname();
   const currentSlug = pathname.split("/").pop();
   const currentIndex = caseStudies.findIndex(
@@ -37,13 +38,33 @@ export default function CodeConnect() {
 
   return (
     <>
-      <HeroCaseStudy
-        title="BEON Performance."
-        subtitle="Product Design"
-        description="UX Design"
-        backgroundImage="/images/featured/beon/BEON_Hero.png"
-        bgColor="bg-green-700"
-      />
+      <div className="relative">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/featured/beon/BEON_Hero.png"
+            alt="BEON Performance Hero"
+            fill
+            priority
+            className="object-cover"
+          />
+        </div>
+        <div className="relative z-10">
+          <HeroSection
+            backgroundColor="bg-green-700 bg-opacity-10"
+            paddingTop="pt-24"
+            paddingBottom="pb-64"
+            heading="BEON Performance."
+            headingSize="text-4xl sm:text-7xl"
+            headingWeight="font-semibold"
+            headingTracking="tracking-tighter"
+            h
+            paragraph="Product Design & Strategy"
+            paragraphSize="text-base"
+            paragraphWeight="font-light"
+            paragraphColor="text-gray-300"
+          />
+        </div>
+      </div>
 
       <div className="mx-auto max-w-7xl px-8 sm:px-20">
         {/* Intro */}
@@ -228,7 +249,7 @@ export default function CodeConnect() {
         <div className="my-4 flex items-center justify-center border border-zinc-300 bg-zinc-50 py-8">
           {/* Define Gallery Size Here */}
 
-          <ImageGallery
+          <ImageCarousel
             images={images}
             captions={captions}
             className="h-[800px] w-[800px]"

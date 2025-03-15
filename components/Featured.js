@@ -48,7 +48,7 @@ const sections = [
     ],
   },
   {
-    title: "Conceptual & pitches",
+    title: "Conceptual",
     description: "A collection of personal projects outside client work.  ",
     cta: "Learn more",
     number: "2",

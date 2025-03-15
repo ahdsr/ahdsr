@@ -1,4 +1,3 @@
-import Button from "@/components/Button";
 import MotionButton from "@/components/Button";
 
 export default function ProjectNavigation({ prevProject, nextProject }) {

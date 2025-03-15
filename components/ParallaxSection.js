@@ -6,7 +6,7 @@ export default function ParallaxSection({ mediaSrc, isVideo = false }) {
 
   useEffect(() => {
     const handleScroll = () => {
-      setOffset(window.scrollY * 0.5); // Adjust speed of parallax effect
+      setOffset(window.scrollY * 0.3); // Reduced parallax speed to minimize gaps
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -15,23 +15,35 @@ export default function ParallaxSection({ mediaSrc, isVideo = false }) {
 
   return (
     <div className="relative h-screen w-full overflow-hidden bg-black">
-      {isVideo ? (
-        <video
-          className="absolute left-0 top-0 -mt-96 h-full w-full object-cover md:-mt-64"
-          src={mediaSrc}
-          autoPlay
-          loop
-          muted
-          style={{ transform: `translateY(${offset * 0.5}px)` }} // Apply parallax effect
-        />
-      ) : (
-        <img
-          className="absolute left-0 top-0 -mt-96 h-full w-full object-cover md:-mt-64"
-          src={mediaSrc}
-          alt="Parallax Background"
-          style={{ transform: `translateY(${offset * 0.5}px)` }} // Apply parallax effect
-        />
-      )}
+      <div className="absolute inset-0" style={{ overflow: "hidden" }}>
+        {isVideo ? (
+          <video
+            className="absolute left-0 top-[-15%] h-[160%] w-full object-cover"
+            src={mediaSrc}
+            autoPlay
+            loop
+            muted
+            style={{
+              transform: `translateY(${offset * 0.3}px) scale(1.05)`, // Reduced movement and slight scale up
+              objectFit: "cover",
+              objectPosition: "center center",
+              minHeight: "160vh", // Increased height for better coverage
+            }}
+          />
+        ) : (
+          <img
+            className="absolute left-0 top-[-15%] h-[160%] w-full object-cover"
+            src={mediaSrc}
+            alt="Parallax Background"
+            style={{
+              transform: `translateY(${offset * 0.3}px) scale(1.05)`, // Reduced movement and slight scale up
+              objectFit: "cover",
+              objectPosition: "center center",
+              minHeight: "160vh", // Increased height for better coverage
+            }}
+          />
+        )}
+      </div>
       <div className="absolute inset-0 flex items-center justify-center">
         <h1 className="font-sans text-2xl font-bold tracking-tighter text-indigo-500 md:text-2xl">
           Reel coming soon.

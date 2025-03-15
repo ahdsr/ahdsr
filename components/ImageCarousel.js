@@ -3,7 +3,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
 
-const ImageGallery = ({
+const ImageCarousel = ({
   images,
   captions,
   className,
@@ -87,4 +87,4 @@ const ImageGallery = ({
   );
 };
 
-export default ImageGallery;
+export default ImageCarousel;
