@@ -8,8 +8,8 @@ export default function Home() {
     <>
       <HeroSection
         backgroundColor="bg-zinc-300"
-        paddingTop="pt-32"
-        paddingBottom="pb-80"
+        paddingTop="pt-32 md:pt-64"
+        paddingBottom="pb-32 md:pb-96"
         heading="Transforming ideas into intuitive experiences."
         headingColor="text-black"
         headingTracking="tracking-tighter"
