@@ -52,7 +52,7 @@ export default function Beon() {
           <HeroSection
             backgroundColor="bg-green-700 bg-opacity-10"
             paddingTop="pt-24"
-            paddingBottom="pb-64"
+            paddingBottom="pb-96"
             heading="BEON Performance."
             headingSize="text-4xl sm:text-7xl"
             headingWeight="font-semibold"
