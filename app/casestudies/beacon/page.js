@@ -3,6 +3,7 @@
 import HeroSection from "@/components/HeroSection";
 import ProjectNavigation from "@/components/ProjectNavigation";
 import VideoSection from "@/components/VideoSection";
+import AnimatedImage from "@/components/AnimatedImage";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 
@@ -28,7 +29,7 @@ export default function Beacon() {
       <div className="relative">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/featured/codeconnect/UseCase_Hero.png"
+            src="/images/featured/beacon/Beacon_Hero.png"
             alt="Beacon Mobile"
             fill
             priority
@@ -37,9 +38,9 @@ export default function Beacon() {
         </div>
         <div className="relative z-10">
           <HeroSection
-            backgroundColor="bg-emerald-500 bg-opacity-80"
+            backgroundColor="bg-indigo-500 bg-opacity-80"
             paddingTop="pt-24"
-            paddingBottom="pb-24"
+            paddingBottom="pb-64"
             heading="Beacon Mobile"
             headingSize="text-4xl sm:text-7xl"
             headingWeight="font-semibold"
@@ -92,14 +93,27 @@ export default function Beacon() {
             My role & team
           </div>
           <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
-            As a design on the design system team my responsibility is to review
-            the existing Beacon screens and flows and apply the new design
-            system look and feel to the existing screens. Along the way I am
-            also responsible for improving any exisitng interactions, suggesting
-            new and more efficient flows as well as ensuring that we keep true
-            to the new design ssytgem being rolled out at FIS.
+            As a designer on the Design System team, my responsibility is to
+            review existing Beacon screens and flows, applying the new design
+            system's look and feel to ensure consistency. Additionally, I am
+            responsible for improving existing interactions, suggesting more
+            efficient workflows, and ensuring alignment with the new design
+            system being rolled out at FIS.
           </div>
         </div>
+
+        <AnimatedImage
+          src={[
+            "/images/featured/beacon/homescreen_old.png",
+            "/images/featured/beacon/homescreen_new.png",
+          ]}
+          bgColor=" round-4xl shadow-lg"
+        />
+
+        <AnimatedImage
+          src={["/images/featured/beacon/protopath.png"]}
+          bgColor="bg-white "
+        />
 
         <VideoSection
           videoSrc="/videos/beacon.mp4"

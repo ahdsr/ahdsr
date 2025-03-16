@@ -11,7 +11,7 @@ export default function WorkPage() {
         headingColor="text-black"
         headingSize="text-8xl md:text-9xl"
         headingWeight="font-semibold"
-        headingTracking="tracking-[-10]"
+        headingTracking="tracking-[-6] md:tracking-[-10]"
         paragraph=""
         initialAnimation={{ y: "100%" }}
         mainTransition={{
