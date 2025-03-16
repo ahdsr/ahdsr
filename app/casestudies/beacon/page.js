@@ -38,7 +38,7 @@ export default function Beacon() {
         </div>
         <div className="relative z-10">
           <HeroSection
-            backgroundColor="bg-indigo-500 bg-opacity-80"
+            backgroundColor="bg-blue-700 bg-opacity-80"
             paddingTop="pt-24"
             paddingBottom="pb-64"
             heading="Beacon Mobile"
