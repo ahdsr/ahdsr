@@ -60,13 +60,13 @@ const sections = [
         image: "/images/featured/beon/BEON_Thumb.png",
         bgColor: "bg-orange-500",
       },
-      // {
-      //   title: "Project Alchemy",
-      //   description: "Site Redesign",
-      //   link: "/casestudies/projectalchemy",
-      //   image: "/images/featured/projectalchemy/ProjectAlchemy_Thumb.png",
-      //   bgColor: "bg-orange-500",
-      // },
+      {
+        title: "Project Alchemy",
+        description: "Site Redesign",
+        link: "/casestudies/projectalchemy",
+        image: "/images/featured/projectalchemy/ProjectAlchemy_Thumb.png",
+        bgColor: "bg-orange-500",
+      },
     ],
   },
 ];

@@ -90,21 +90,40 @@ export default function CodeConnect() {
           </div>
         </div>
         {/* My Role & Team */}
+        <div className="mb-8 flex-1 font-sans text-5xl font-medium tracking-tighter text-zinc-800">
+          My role & team
+        </div>
         <div className="mx-auto flex flex-col gap-8 border-t border-t-zinc-300 py-12 font-sans md:flex-row md:py-24">
-          <div className="mb-8 flex-1 text-5xl font-medium tracking-tighter text-zinc-800">
-            My role & team
+          <div className="flex-1">
+            <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
+              As a UX Designer on the Code Connect project, my focus was on
+              creating a seamless user experience while working within the RUF
+              design system constraints. Instead of reinventing visuals, I
+              strategically leveraged existing components to maintain
+              consistency and efficiency.
+            </div>
           </div>
           <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
-            As a UX Designer on the Code Connect project, I focused on creating
-            seamless user experiences while working within the constraints of
-            the RUF design system library. Rather than reinventing visuals, I
-            strategically leveraged existing components to maintain consistency
-            and efficiency. Collaborating closely with the marketing and project
-            management teams, I ensured that imagery aligned with the project’s
-            vision and objectives. My role also involved in-depth competitor
-            research, analyzing industry trends to identify opportunities for
-            differentiation and innovation—ultimately shaping solutions that set
-            Code Connect apart.
+            Key Contributions:
+            <ul className="ml-12 list-disc">
+              <li>
+                Navigation & Information Architecture: Improved usability by
+                restructuring key sections.
+              </li>
+              <li>
+                Research & Competitive Analysis: Identified gaps and areas of
+                differentiation through industry research.
+              </li>
+              <li>
+                ross-Functional Collaboration: Worked closely with marketing and
+                project management to ensure a cohesive user experience and
+                brand alignment.
+              </li>
+              <li>
+                Data-Driven Enhancements: Introduced insights-driven dashboards
+                and search features to enhance decision-making for users.
+              </li>
+            </ul>
           </div>
         </div>
 
