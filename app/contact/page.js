@@ -20,7 +20,7 @@ export default function ContactPage() {
         headingColor="text-black"
         headingSize="text-8xl md:text-9xl"
         headingWeight="font-semibold"
-        headingTracking="tracking-[-6] md:tracking-[-10]"
+        headingTracking="tracking-[-6px] md:tracking-[-10px]"
         paragraph="Let's connect and create something impactful. I bring together strategy, research, and technology to craft intuitive experiences that engage users and drive real results. If you're ready to build something that matters, reach out—I'd love to collaborate."
         paragraphColor="text-zinc-500"
         initialAnimation={{ y: "100%" }}

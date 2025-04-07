@@ -4,16 +4,17 @@ export default function AboutPage() {
   return (
     <>
       <HeroSection
-        backgroundColor="bg-red-500"
+        backgroundColor="bg-gray-500"
         paddingTop="pt-12"
         paddingBottom="pb-12"
-        heading="Cline is the shit!"
-        headingHighlight=" Eat your heart out JR Developer."
+        heading="Lucas is a designer based out of "
+        headingColor="text-black"
+        headingHighlight="Toronto, Canada."
         headingHighlightColor="text-white"
         headingSize="text-7xl"
         headingWeight="font-semibold"
         headingTracking="tracking-tighter"
-        paragraph="As a designer, I've been lucky enough to be exposed to a vast number of employers, teams and projects. Each of them have given me a rewarding learning experience."
+        paragraph="I'm a father of 2, trainer to a hyper Vizsla, design is my passion."
         paragraphSize="text-3xl"
         paragraphWeight="font-light"
         paragraphColor="text-white"
