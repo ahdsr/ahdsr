@@ -13,13 +13,13 @@ const sections = [
   {
     title: "Client digital products",
     description:
-      "This category highlights end-to-end client projects, from strategy and UX/UI design to full front-end and back-end development. Whether for startups or established businesses, these projects showcase the seamless transformation of ideas into digital products.",
+      "This category highlights end-to-end client projects, from strategy and UX/UI design. ",
     cta: "Learn more",
     number: "1",
     projects: [
       {
-        title: "Code Connect",
-        description: "Site Redesign",
+        title: "FIS Global - Code Connect",
+        description: "API Marketplace",
         link: "/casestudies/codeconnect",
         image: "/images/featured/codeconnect/Codeconnect_Thumb.png",
         bgColor: "bg-emerald-500",

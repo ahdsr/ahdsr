@@ -20,7 +20,7 @@ export default function VideoSection({ videoSrc, overlayText = "" }) {
       className="relative mx-auto my-4 flex w-full max-w-7xl items-center justify-center"
     >
       {/* Video Container with Aspect Ratio */}
-      <div className="relative flex aspect-video w-full max-w-7xl items-center justify-center overflow-hidden">
+      <div className="relative flex aspect-video w-full max-w-7xl items-center justify-center overflow-hidden shadow-lg">
         {videoSrc && (
           <video
             className="h-full max-h-full w-full max-w-full object-contain"

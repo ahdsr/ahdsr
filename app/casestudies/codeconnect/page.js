@@ -4,6 +4,8 @@ import HeroSection from "@/components/HeroSection";
 import ProjectNavigation from "@/components/ProjectNavigation";
 import AnimatedImage from "@/components/AnimatedImage";
 import Image from "next/image";
+
+import VideoSection from "@/components/VideoSection";
 import { usePathname } from "next/navigation";
 
 const caseStudies = [
@@ -90,40 +92,40 @@ export default function CodeConnect() {
           </div>
         </div>
         {/* My Role & Team */}
+
         <div className="mb-8 flex-1 font-sans text-5xl font-medium tracking-tighter text-zinc-800">
           My role & team
         </div>
         <div className="mx-auto flex flex-col gap-8 border-t border-t-zinc-300 py-12 font-sans md:flex-row md:py-24">
           <div className="flex-1">
             <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
-              As a UX Designer on the Code Connect project, my focus was on
-              creating a seamless user experience while working within the RUF
-              design system constraints. Instead of reinventing visuals, I
-              strategically leveraged existing components to maintain
-              consistency and efficiency.
+              As a UX/Product Designer on the project, my focus was on
+              redesigning and creating a seamless user experience and
+              introducing new key features into the Code Connect Marketplace
+              that was starting to show its age based on its competitors.
+              <h2>Key Contributions:</h2>
+              <ul className="ml-12 list-disc">
+                <li>
+                  Research & Competitive Analysis: Identified gaps and areas of
+                  differentiation through industry research.
+                </li>
+                <li>
+                  Navigation & Information Architecture: Improved usability by
+                  restructuring key sections.
+                </li>
+
+                <li>
+                  ross-Functional Collaboration: Worked closely with marketing
+                  and project management to ensure a cohesive user experience
+                  and brand alignment.
+                </li>
+                <li>
+                  Data-Driven Enhancements: Introduced insights-driven
+                  dashboards and search features to enhance decision-making for
+                  users.
+                </li>
+              </ul>
             </div>
-          </div>
-          <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
-            Key Contributions:
-            <ul className="ml-12 list-disc">
-              <li>
-                Navigation & Information Architecture: Improved usability by
-                restructuring key sections.
-              </li>
-              <li>
-                Research & Competitive Analysis: Identified gaps and areas of
-                differentiation through industry research.
-              </li>
-              <li>
-                ross-Functional Collaboration: Worked closely with marketing and
-                project management to ensure a cohesive user experience and
-                brand alignment.
-              </li>
-              <li>
-                Data-Driven Enhancements: Introduced insights-driven dashboards
-                and search features to enhance decision-making for users.
-              </li>
-            </ul>
           </div>
         </div>
 
@@ -211,6 +213,50 @@ export default function CodeConnect() {
           src="/images/featured/codeconnect/ProductCatalog-New.png"
           label="Redesigned"
           delay={0.3}
+        />
+        {/* Feedback */}
+        <div className="mx-auto flex flex-col gap-8 border-t border-t-zinc-300 py-12 font-sans md:flex-row md:py-24">
+          <div className="mb-8 flex-1 text-5xl font-medium tracking-tighter text-zinc-800">
+            User Feedback Mechanism
+          </div>
+          <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
+            Problem: In the current application, user were not able to give
+            feedback on the various content types present in Code Connect. This
+            was especially needed for the API documenation pages.
+          </div>{" "}
+          <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
+            Solution: Preseent users with a quck and easy way to provide
+            feedback starting with the API Documenation pages. Since this was
+            not a priority placing the actions at the bottom of the screen made
+            the most sense.
+          </div>
+        </div>
+        <VideoSection
+          videoSrc="/videos/Feedback.mp4"
+          overlay={false}
+          overlayText=""
+        />
+        {/* Design Iterations */}
+        <div className="mx-auto flex flex-col gap-8 border-t border-t-zinc-300 py-12 font-sans md:flex-row md:py-24">
+          <div className="mb-8 flex-1 text-5xl font-medium tracking-tighter text-zinc-800">
+            Design Iterations
+          </div>
+          <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
+            Problem: In the current application, user were not able to give
+            feedback on the various content types present in Code Connect. This
+            was especially needed for the API documenation pages.
+          </div>{" "}
+          <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
+            Solution: Preseent users with a quck and easy way to provide
+            feedback starting with the API Documenation pages. Since this was
+            not a priority placing the actions at the bottom of the screen made
+            the most sense.
+          </div>
+        </div>
+        <VideoSection
+          videoSrc="/videos/Design.mp4"
+          overlay={false}
+          overlayText=""
         />
         {/* Impact & Results */}
         <div className="mx-auto flex flex-col gap-8 border-t border-t-zinc-300 py-12 font-sans md:flex-row md:py-24">

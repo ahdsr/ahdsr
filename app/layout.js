@@ -1,4 +1,5 @@
 import { Analytics } from "@vercel/analytics/react";
+import { PostHogProvider } from "@/components/PostHogProvider";
 // import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -27,16 +28,18 @@ export default function RootLayout({ children }) {
       <body
       // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {/* Fixed Navbar */}
-        <div className="fixed left-0 top-0 z-50 w-full">
-          <Navbar />
-        </div>
+        <PostHogProvider>
+          {/* Fixed Navbar */}
+          <div className="fixed left-0 top-0 z-50 w-full">
+            <Navbar />
+          </div>
 
-        {/* Content with padding to prevent overlap */}
-        <main className="relative top-0 bg-white">{children}</main>
-        <div className="bg-white">
-          <Footer />
-        </div>
+          {/* Content with padding to prevent overlap */}
+          <main className="relative top-0 bg-white">{children}</main>
+          <div className="bg-white">
+            <Footer />
+          </div>
+        </PostHogProvider>
       </body>
     </html>
   );
