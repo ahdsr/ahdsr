@@ -1,6 +1,6 @@
 import { Analytics } from "@vercel/analytics/react";
 import { PostHogProvider } from "@/components/PostHogProvider";
-import { PostHogPageView } from "@/components/PostHogPageView";
+import PostHogPageView from "@/components/PostHogPageView";
 // import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
