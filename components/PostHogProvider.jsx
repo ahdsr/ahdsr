@@ -10,8 +10,11 @@ export function PostHogProvider({ children }) {
     posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY, {
       api_host: "/ingest",
       ui_host: "https://us.posthog.com",
-      capture_pageview: false, // We capture pageviews manually
+      capture_pageview: true, // We capture pageviews manually
       capture_pageleave: true, // Enable pageleave capture
+      session_recording: {
+        recordCanvas: true,
+      },
       debug: process.env.NODE_ENV === "development",
     });
   }, []);
