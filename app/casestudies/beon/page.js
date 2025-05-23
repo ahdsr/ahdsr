@@ -23,7 +23,7 @@ const images = [
 const captions = [
   "Initial screen to engage with insights",
   "Insights in relation to event",
-  "Spider chat to easily illustate areas of strength and weaknesss",
+  "Spider chat to easily illustrate areas of strength and weakness",
 ];
 
 export default function Beon() {
@@ -111,7 +111,7 @@ export default function Beon() {
         </div>
         {/* My Role & Team */}
         <div className="mx-auto flex flex-col gap-8 border-t border-t-zinc-300 py-12 font-sans md:flex-row md:py-24">
-          <div className="mb-8 flex-1 text-5xl font-medium tracking-tighter text-zinc-800">
+          <div className="mb-8 flex-1 text-2xl font-medium tracking-tighter text-zinc-800 md:text-5xl">
             My role & team
           </div>
           <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
@@ -160,7 +160,7 @@ export default function Beon() {
 
         {/* Make the journey short and easy!!! */}
         <div className="mx-auto flex flex-col gap-x-8 py-12 font-sans md:flex-row md:py-24">
-          <div className="mb-8 flex-1 text-5xl font-medium tracking-tighter text-zinc-800">
+          <div className="mb-8 flex-1 text-2xl font-medium tracking-tighter text-zinc-800 md:text-5xl">
             The ACT model
           </div>
           <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
@@ -195,7 +195,7 @@ export default function Beon() {
         />
         {/* Tracking and Reflecting on Performance */}
         <div className="mx-auto flex flex-col gap-8 gap-x-8 py-12 font-sans md:flex-row md:py-24">
-          <div className="mb-8 flex-1 text-5xl font-medium tracking-tighter text-zinc-800">
+          <div className="mb-8 flex-1 text-2xl font-medium tracking-tighter text-zinc-800 md:text-5xl">
             Tracking and Reflecting on Performance
           </div>
           <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
@@ -228,9 +228,9 @@ export default function Beon() {
           labels={[]}
           bgColor="bg-white"
         />
-        {/* Inisght */}
+        {/* Insight */}
         <div className="mx-auto flex flex-col gap-8 gap-x-8 py-12 font-sans md:flex-row md:py-24">
-          <div className="mb-8 flex-1 text-5xl font-medium tracking-tighter text-zinc-800">
+          <div className="mb-8 flex-1 text-2xl font-medium tracking-tighter text-zinc-800 md:text-5xl">
             Insights
           </div>
           <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
@@ -256,9 +256,9 @@ export default function Beon() {
             captionPosition="bottom-2 " // Customize caption position
           />
         </div>
-        {/* Inisght */}
+        {/* Insight */}
         <div className="mx-auto flex flex-col gap-8 gap-x-8 py-12 font-sans md:flex-row md:py-24">
-          <div className="mb-8 flex-1 text-5xl font-medium tracking-tighter text-zinc-800">
+          <div className="mb-8 flex-1 text-2xl font-medium tracking-tighter text-zinc-800 md:text-5xl">
             Final thoughts
           </div>
           <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">

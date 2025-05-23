@@ -58,7 +58,7 @@ export default function Beacon() {
         <div className="mx-auto flex flex-col gap-8 border-t border-t-zinc-300 py-12 font-sans md:flex-row md:py-24">
           <div className="flex-1 text-xl font-light tracking-normal text-zinc-600 md:text-2xl md:font-thin">
             Beacon mobile is FIS's white label mobile banking platform. It is
-            used by many local and independant banks all over the US.
+            used by many local and independent banks all over the US.
           </div>
           <div className="mb-8 text-5xl font-medium tracking-tighter text-zinc-800">
             <div className="mb-4">
@@ -89,7 +89,7 @@ export default function Beacon() {
         </div>
         {/* My Role & Team */}
         <div className="mx-auto flex flex-col gap-8 border-t border-t-zinc-300 py-12 font-sans md:flex-row md:py-24">
-          <div className="mb-8 flex-1 text-5xl font-medium tracking-tighter text-zinc-800">
+          <div className="mb-8 flex-1 text-2xl font-medium tracking-tighter text-zinc-800 md:text-5xl">
             My role & team
           </div>
           <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">

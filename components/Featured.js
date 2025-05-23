@@ -105,7 +105,7 @@ export default function Featured({ sectionList = sections }) {
                 initial={{ opacity: 0, y: 50 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, ease: "easeOut" }}
-                className="mb-24 pb-12 text-center md:text-left"
+                className="mb-8 text-center md:mb-24 md:text-left"
               >
                 <div className="flex flex-col items-start gap-6 md:flex-row">
                   {/* Left Column - Number & CTA Button */}
@@ -127,11 +127,11 @@ export default function Featured({ sectionList = sections }) {
                   </div>
 
                   {/* Right Column - Title & Description */}
-                  <div className="md:mb-12 md:flex-1 md:pb-12">
-                    <h2 className="pb-4 text-left font-sans text-3xl font-semibold tracking-tighter text-zinc-800 md:text-5xl">
+                  <div className="md:mb-4 md:flex-1">
+                    <h2 className="mt-4 text-left font-sans text-2xl font-semibold tracking-tighter text-zinc-800 md:text-4xl">
                       {title}
                     </h2>
-                    <p className="mt-4 pb-4 text-left font-sans text-xl font-light tracking-tight text-zinc-600">
+                    <p className="mt-4 pb-4 text-left font-sans text-base font-light tracking-tight text-zinc-600 md:text-lg">
                       {description}
                     </p>
                   </div>
@@ -149,7 +149,7 @@ export default function Featured({ sectionList = sections }) {
                 {projects.map((project, projectIndex) => (
                   <div key={projectIndex} className="">
                     <div
-                      className={`relative h-64 w-full overflow-hidden ${project.bgColor}`}
+                      className={`relative h-64 w-full overflow-hidden rounded-md ${project.bgColor}`}
                     >
                       <div className="relative h-full w-full">
                         {/* Using useState to track hover state for the entire container */}
@@ -188,10 +188,10 @@ export default function Featured({ sectionList = sections }) {
 
                     {/* Text Below */}
                     <div className="pb-8">
-                      <h3 className="mt-2 font-light text-zinc-800">
+                      <h3 className="mt-2 font-medium tracking-tight text-zinc-800">
                         {project.title}
                       </h3>
-                      <p className="font-light text-zinc-400">
+                      <p className="text-sm font-light text-zinc-400">
                         {project.description}
                       </p>
                     </div>

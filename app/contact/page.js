@@ -38,7 +38,7 @@ export default function ContactPage() {
               Got ideas? I've got the skills.
             </h2>
             <div className="font-xl mb-4 font-sans text-black">
-              Email me for inquires, quesitons or a quick chat about your
+              Email me for inquires, questions or a quick chat about your
               project.
             </div>
             <div className="font-xl font-sans text-blue-700">

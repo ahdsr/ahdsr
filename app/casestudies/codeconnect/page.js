@@ -93,17 +93,17 @@ export default function CodeConnect() {
         </div>
         {/* My Role & Team */}
 
-        <div className="mb-8 flex-1 font-sans text-5xl font-medium tracking-tighter text-zinc-800">
+        <div className="mb-8 flex-1 text-2xl font-medium tracking-tighter text-zinc-800 md:text-5xl">
           My role & team
         </div>
         <div className="mx-auto flex flex-col gap-8 border-t border-t-zinc-300 py-12 font-sans md:flex-row md:py-24">
           <div className="flex-1">
-            <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
+            <div className="font-regular flex-1 text-base text-zinc-600 md:text-lg">
               As a UX/Product Designer on the project, my focus was on
               redesigning and creating a seamless user experience and
               introducing new key features into the Code Connect Marketplace
               that was starting to show its age based on its competitors.
-              <h2>Key Contributions:</h2>
+              <h2 className="mt-4">Key Contributions:</h2>
               <ul className="ml-12 list-disc">
                 <li>
                   Research & Competitive Analysis: Identified gaps and areas of
@@ -131,24 +131,26 @@ export default function CodeConnect() {
 
         {/* Homepage */}
         <div className="mx-auto flex flex-col gap-x-8 py-12 font-sans md:flex-row md:py-24">
-          <div className="mb-8 flex-1 text-5xl font-medium tracking-tighter text-zinc-800">
+          <div className="mb-8 flex-1 text-2xl font-medium tracking-tighter text-zinc-800 md:text-5xl">
             Homepage: Improving Navigation & Clarity
           </div>
           <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
             <div className="font-medium">Problem</div>
-            The homepage lacked clear direction, leaving users uncertain about
-            where to navigate next. Developers, in particular, found the content
-            too marketing-heavy, making it difficult to quickly access relevant
-            information.
+            <div className="text-base text-zinc-600 md:text-lg">
+              The homepage lacked clear direction, leaving users uncertain about
+              where to navigate next. Developers, in particular, found the
+              content too marketing-heavy, making it difficult to quickly access
+              relevant information.
+            </div>
             <div className="mt-8 font-medium">Solution</div>
             <ul className="text-lg font-light tracking-tight text-zinc-600 md:text-lg">
-              <li className="border-b border-b-zinc-300 py-4">
+              <li className="border-b border-b-zinc-300 py-4 text-base text-zinc-600 md:text-lg">
                 Improved navigation and information hierarchy.
               </li>
-              <li className="border-b border-b-zinc-300 py-4">
+              <li className="border-b border-b-zinc-300 py-4 text-base text-zinc-600 md:text-lg">
                 Prominent display of platform announcements.
               </li>
-              <li className="border-b border-b-zinc-300 py-4">
+              <li className="border-b border-b-zinc-300 py-4 text-base text-zinc-600 md:text-lg">
                 Clear, intuitive labels for navigation (e.g., Home, Catalog,
                 Help Center) instead of ambiguous terminology.
               </li>
@@ -166,10 +168,10 @@ export default function CodeConnect() {
         />
         {/* Dashboards */}
         <div className="mx-auto flex flex-col gap-8 border-t border-t-zinc-300 py-12 font-sans md:flex-row md:py-24">
-          <div className="mb-8 flex-1 text-5xl font-medium tracking-tighter text-zinc-800">
+          <div className="mb-8 flex-1 text-2xl font-medium tracking-tighter text-zinc-800 md:text-5xl">
             Dashboards: Enhancing User Insights
           </div>
-          <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
+          <div className="text-base text-zinc-600 md:text-lg">
             Users lacked a centralized way to track their API usage trends and
             financial forecasts, making it harder to make informed decisions.
             Solution: Introduced a comprehensive dashboard displaying key usage
@@ -191,7 +193,7 @@ export default function CodeConnect() {
         />
         {/* Product Catalog */}
         <div className="mx-auto flex flex-col gap-8 border-t border-t-zinc-300 py-12 font-sans md:flex-row md:py-24">
-          <div className="mb-8 flex-1 text-5xl font-medium tracking-tighter text-zinc-800">
+          <div className="mb-8 flex-1 text-2xl font-medium tracking-tighter text-zinc-800 md:text-5xl">
             Product Catalog: Streamlining Discovery & Usability
           </div>
           <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
@@ -216,17 +218,17 @@ export default function CodeConnect() {
         />
         {/* Feedback */}
         <div className="mx-auto flex flex-col gap-8 border-t border-t-zinc-300 py-12 font-sans md:flex-row md:py-24">
-          <div className="mb-8 flex-1 text-5xl font-medium tracking-tighter text-zinc-800">
+          <div className="mb-8 flex-1 text-2xl font-medium tracking-tighter text-zinc-800 md:text-5xl">
             User Feedback Mechanism
           </div>
           <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
             Problem: In the current application, user were not able to give
             feedback on the various content types present in Code Connect. This
-            was especially needed for the API documenation pages.
+            was especially needed for the API documentation pages.
           </div>{" "}
           <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
-            Solution: Preseent users with a quck and easy way to provide
-            feedback starting with the API Documenation pages. Since this was
+            Solution: Present users with a quick and easy way to provide
+            feedback starting with the API Documentation pages. Since this was
             not a priority placing the actions at the bottom of the screen made
             the most sense.
           </div>
@@ -238,17 +240,17 @@ export default function CodeConnect() {
         />
         {/* Design Iterations */}
         <div className="mx-auto flex flex-col gap-8 border-t border-t-zinc-300 py-12 font-sans md:flex-row md:py-24">
-          <div className="mb-8 flex-1 text-5xl font-medium tracking-tighter text-zinc-800">
+          <div className="mb-8 flex-1 text-2xl font-medium tracking-tighter text-zinc-800 md:text-5xl">
             Design Iterations
           </div>
           <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
             Problem: In the current application, user were not able to give
             feedback on the various content types present in Code Connect. This
-            was especially needed for the API documenation pages.
+            was especially needed for the API documentation pages.
           </div>{" "}
           <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
-            Solution: Preseent users with a quck and easy way to provide
-            feedback starting with the API Documenation pages. Since this was
+            Solution: Present users with a quick and easy way to provide
+            feedback starting with the API Documentation pages. Since this was
             not a priority placing the actions at the bottom of the screen made
             the most sense.
           </div>
@@ -260,10 +262,10 @@ export default function CodeConnect() {
         />
         {/* Impact & Results */}
         <div className="mx-auto flex flex-col gap-8 border-t border-t-zinc-300 py-12 font-sans md:flex-row md:py-24">
-          <div className="mb-8 flex-1 text-5xl font-medium tracking-tighter text-zinc-800">
+          <div className="mb-8 flex-1 text-2xl font-medium tracking-tighter text-zinc-800 md:text-5xl">
             Impact & Results
           </div>
-          <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
+          <div className="flex-1">
             Improved homepage clarity, ensuring users navigate more efficiently.
             Enhanced dashboard insights, allowing businesses to make data-driven
             decisions. Streamlined product catalog, reducing friction in

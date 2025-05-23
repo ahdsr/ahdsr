@@ -95,20 +95,20 @@ export default function Quest() {
         </div>
         {/* My Role & Team */}
         <div className="mx-auto flex flex-col gap-8 border-t border-t-zinc-300 py-12 font-sans md:flex-row md:py-24">
-          <div className="mb-8 flex-1 text-5xl font-medium tracking-tighter text-zinc-800">
+          <div className="mb-8 flex-1 text-2xl font-medium tracking-tighter text-zinc-800 md:text-5xl">
             My role & team
           </div>
           <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
             I co-led research, product design, and UI/UX for the Quest Insurance
-            product, ensuring a seamless experience across all customer
-            touchpoints. Collaborating with a seasoned Canadian insurance
-            development team and a lean product director team.
+            product, ensuring a seamless experience across all customer touch
+            points. Collaborating with a seasoned Canadian insurance development
+            team and a lean product director team.
           </div>
         </div>
         {/* Competitive landscape */}
         <div className="mx-auto flex flex-row gap-12 border-t border-t-zinc-300 py-12 font-sans md:py-24">
           <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
-            <div className="mb-4 text-5xl font-medium tracking-tighter text-zinc-800">
+            <div className="mb-8 flex-1 text-2xl font-medium tracking-tighter text-zinc-800 md:text-5xl">
               Competitive landscape
             </div>
             <div className="text-lg font-light tracking-tight text-zinc-600 md:text-lg">
@@ -123,8 +123,8 @@ export default function Quest() {
               users had to navigate, and how seamless the transition was from
               receiving a quote to purchasing (or “binding”) a policy online.
               Additionally, we examined post-quote interactions, including
-              emails and other touchpoints, to understand how competitors guided
-              users through the journey.
+              emails and other touch points, to understand how competitors
+              guided users through the journey.
             </div>
           </div>
         </div>
@@ -152,7 +152,7 @@ export default function Quest() {
         </div>
         {/* Make the journey short and easy!!! */}
         <div className="mx-auto flex flex-col gap-x-8 py-12 font-sans md:flex-row md:py-24">
-          <div className="mb-8 flex-1 text-5xl font-medium tracking-tighter text-zinc-800">
+          <div className="mb-8 flex-1 text-2xl font-medium tracking-tighter text-zinc-800 md:text-5xl">
             Make the journey short and easy!!!
           </div>
           <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
@@ -173,7 +173,7 @@ export default function Quest() {
           src="/images/featured/quest/CompetitiveProcess.png"
           labels={[
             {
-              text: "Evaluating the usr journey paintpoints",
+              text: "Evaluating the user journey pain points",
               emoji: "🔥",
             },
           ]}
@@ -195,7 +195,7 @@ export default function Quest() {
           src="/images/featured/quest/Quest-Prefill2.png"
           labels={[
             {
-              text: "Upcon a successful database return, users vehicles and driver info is pre-filled",
+              text: "Upon a successful database return, users vehicles and driver info is pre-filled",
               emoji: "🔥",
             },
           ]}
@@ -205,7 +205,7 @@ export default function Quest() {
         />
         {/* Bundling */}
         <div className="mx-auto flex flex-col gap-8 gap-x-8 py-12 font-sans md:flex-row md:py-24">
-          <div className="mb-8 flex-1 text-5xl font-medium tracking-tighter text-zinc-800">
+          <div className="mb-8 flex-1 text-2xl font-medium tracking-tighter text-zinc-800 md:text-5xl">
             Bundling? We've got it.
           </div>
           <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
@@ -224,7 +224,7 @@ export default function Quest() {
                 Highlighting a clear "winning" choice in the middle
               </li>
               <li className="border-b border-b-zinc-300 py-4">
-                Abilitiy to look up what the coverages meant with tooltips
+                Ability to look up what the coverages meant with tooltips
                 content
               </li>
             </ul>
@@ -250,7 +250,7 @@ export default function Quest() {
           src={["/images/featured/quest/Quest-Quote3.png"]}
           labels={[
             {
-              text: "Distration free layout to focus user attention to coverages",
+              text: "Distraction free layout to focus user attention to coverages",
               emoji: "👍",
             }, // First image has a label
           ]}
@@ -259,7 +259,7 @@ export default function Quest() {
 
         {/* Responsive layouts */}
         <div className="mx-auto flex flex-col gap-x-8 py-12 font-sans md:flex-row md:py-24">
-          <div className="mb-8 flex-1 text-5xl font-medium tracking-tighter text-zinc-800">
+          <div className="mb-8 flex-1 text-2xl font-medium tracking-tighter text-zinc-800 md:text-5xl">
             Responsive customer journeys for all
           </div>
           <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">

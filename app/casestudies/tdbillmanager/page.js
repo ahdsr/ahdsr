@@ -100,12 +100,12 @@ export default function TDBillManager() {
         </div>
         {/* My Role & Team */}
         <div className="mx-auto flex flex-col gap-8 border-t border-t-zinc-300 py-12 font-sans md:flex-row md:py-24">
-          <div className="mb-8 flex-1 text-5xl font-medium tracking-tighter text-zinc-800">
+          <div className="mb-8 flex-1 text-2xl font-medium tracking-tighter text-zinc-800 md:text-5xl">
             My role
           </div>
           <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
             My primary role on the project was to create all the new UI elements
-            this experience needed. It challanged me to inroduce a new visual
+            this experience needed. It challenged me to introduce a new visual
             language that can play nice with the existing styling and look &
             feel of the app.
           </div>
@@ -124,13 +124,13 @@ export default function TDBillManager() {
         </div>
         {/* Make the journey short and easy!!! */}
         <div className="mx-auto flex flex-col gap-x-8 py-12 font-sans md:flex-row md:py-24">
-          <div className="mb-8 flex-1 text-5xl font-medium tracking-tighter text-zinc-800">
+          <div className="mb-8 flex-1 text-2xl font-medium tracking-tighter text-zinc-800 md:text-5xl">
             Onboarding onto the new experience
           </div>
           <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
             TD US Banking app users already had the ability to pay for bills.
             Since this was an improvement, we needed a way to promote and let
-            users enroll in the new experience. The onboarding would entise
+            users enroll in the new experience. The onboarding would entice
             users to learn about what they can get by enrolling, and there was
             not much else to it. They only had to press the "Let's Go" button
             and then the system would start to automatically search for the
@@ -155,8 +155,8 @@ export default function TDBillManager() {
         </div>
         {/* Make the journey short and easy!!! */}
         <div className="mx-auto flex flex-col gap-x-8 py-12 font-sans md:flex-row md:py-24">
-          <div className="mb-8 flex-1 text-5xl font-medium tracking-tighter text-zinc-800">
-            Testing onboaring experience
+          <div className="mb-8 flex-1 text-2xl font-medium tracking-tighter text-zinc-800 md:text-5xl">
+            Testing onboarding experience
           </div>
           <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
             We tested two sets of onboarding flows with users. The above
@@ -184,14 +184,14 @@ export default function TDBillManager() {
         </div>
         {/* Make the journey short and easy!!! */}
         <div className="mx-auto flex flex-col gap-x-8 py-12 font-sans md:flex-row md:py-24">
-          <div className="mb-8 flex-1 text-5xl font-medium tracking-tighter text-zinc-800">
+          <div className="mb-8 flex-1 text-2xl font-medium tracking-tighter text-zinc-800 md:text-5xl">
             Adding new Billers
           </div>
           <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
             Search for billers not found by the system can be added manually by
             searching the biller name. The improvement allows for easier
             identification of billers by introducing the merchant logo. This was
-            part of the purchsed vendor solution.
+            part of the purchased vendor solution.
           </div>
         </div>
         <AnimatedImage
@@ -209,7 +209,7 @@ export default function TDBillManager() {
         </div>
         {/* Make the journey short and easy!!! */}
         <div className="mx-auto flex flex-col gap-x-8 py-12 font-sans md:flex-row md:py-24">
-          <div className="mb-8 flex-1 text-5xl font-medium tracking-tighter text-zinc-800">
+          <div className="mb-8 flex-1 text-2xl font-medium tracking-tighter text-zinc-800 md:text-5xl">
             Responsive experience
           </div>
           <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">

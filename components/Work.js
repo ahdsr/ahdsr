@@ -61,11 +61,18 @@ const projectVariants = {
 // Define multiple sections with their own projects
 const sections = [
   {
-    title: "Digital Products",
+    title: "Use Cases",
     category: "Use Cases",
     description:
-      "Transforming ideas into standout digital services with innovative UX, UI design, and full-stack development. From early-stage concepts to fully functional products, I craft seamless digital experiences that drive engagement and business success.",
+      "From ideas to impact — these selected case studies showcase the breadth of my UX, UI, and product thinking. Each project highlights a different facet of my work: from early concept development to hands-on design and front-end implementation. Together, they reflect my approach to crafting intuitive, engaging, and user-centered digital experiences.",
     projects: [
+      {
+        title: "Unify Design System",
+        description: "Design Systems",
+        link: "/casestudies/unify",
+        image: "/images/featured/unify/Components.png",
+        bgColor: "bg-blue-500",
+      },
       {
         title: "Beacon Mobile",
         description: "Design Systems",
@@ -210,7 +217,7 @@ export default function Work() {
               {/* Section Description */}
               <p
                 ref={ref}
-                className="s mb-12 font-sans text-lg tracking-tight text-gray-600"
+                className="mb-12 font-sans text-lg tracking-tight text-gray-600"
               >
                 {section.description}
               </p>
@@ -227,7 +234,7 @@ export default function Work() {
                     variants={projectVariants}
                   >
                     <div
-                      className={`relative h-64 w-full overflow-hidden ${project.bgColor} flex-grow`}
+                      className={`relative h-64 w-full overflow-hidden rounded-md ${project.bgColor} flex-grow`}
                     >
                       <Link href={project.link}>
                         <motion.div
@@ -247,12 +254,14 @@ export default function Work() {
                     </div>
 
                     {/* Project Title & Description */}
-                    <h3 className="mt-2 font-light text-zinc-800">
-                      {project.title}
-                    </h3>
-                    <p className="w-full font-light text-zinc-400">
-                      {project.description}
-                    </p>
+                    <div className="pb-8">
+                      <h3 className="mt-2 font-medium tracking-tight text-zinc-800">
+                        {project.title}
+                      </h3>
+                      <p className="text-sm font-light text-zinc-400">
+                        {project.description}
+                      </p>
+                    </div>
                   </motion.div>
                 ))}
               </motion.div>

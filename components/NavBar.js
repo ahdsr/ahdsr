@@ -36,19 +36,20 @@ export default function Navbar() {
     "/": scrolled
       ? "bg-white text-zinc-800 shadow-xl shadow-zinc-500/10"
       : "bg-zinc-300 text-gray-600 border-b border-b-zinc-400",
-    "/about": "bg-white text-black border-b border-b-zinc-300",
-    "/work": "bg-white text-black border-b border-b-zinc-300",
-    "/contact": "bg-white text-black border-b border-b-zinc-300",
-    "/blog": "bg-blue-800 text-white border-b border-b-zinc-300",
-    "/casestudies/codeconnect": "bg-white text-black shadow-xl",
-    "/casestudies/projectalchemy": "bg-orange-500 text-black shadow-xl",
-    "/casestudies/beon": "bg-white text-black shadow-xl",
-    "/casestudies/quest": "bg-white text-black shadow-xl",
-    "/casestudies/tddashboards": "bg-white text-black shadow-xl",
-    "/casestudies/tdbillmanager": "bg-white text-black shadow-xl",
-    "/casestudies/beacon": "bg-white text-black shadow-xl",
-    "/work/3d": "bg-teal-700 text-white",
-    "/examples/fullscreen-background": "bg-black text-white",
+    "/about": "bg-white text-black shadow-lg",
+    "/work": "bg-white text-black shadow-lg",
+    "/contact": "bg-white text-black shadow-lg",
+    "/blog": "bg-white text-black shadow-lg",
+    "/casestudies/codeconnect": "bg-white text-black shadow-lg",
+    "/casestudies/projectalchemy": "bg-white text-black shadow-lg",
+    "/casestudies/beon": "bg-white text-black shadow-lg",
+    "/casestudies/quest": "bg-white text-black shadow-lg",
+    "/casestudies/tddashboards": "bg-white text-black shadow-lg",
+    "/casestudies/tdbillmanager": "bg-white text-black shadow-lg",
+    "/casestudies/beacon": "bg-white text-black shadow-lg",
+    "/casestudies/unify": "bg-white text-black shadow-lg",
+    "/work/3d": "bg-white text-black shadow-lg",
+    "/examples/fullscreen-background": "bg-white text-black shadow-lg",
   };
 
   return (
