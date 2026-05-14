@@ -200,7 +200,7 @@ export default function CodeConnect() {
             Problem: The catalog was overwhelming, featuring 100+ products,
             making it difficult to find relevant solutions. Solution: Optimized
             product list from 100+ to 30, ensuring a more focused experience.
-            Toggle for "My Solutions" to filter client-specific products.
+            Toggle for &quot;My Solutions&quot; to filter client-specific products.
             Favorites feature for quick access to bookmarked solutions. Inline
             search functionality for users who know exactly what they need.
           </div>

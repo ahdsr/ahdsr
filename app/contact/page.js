@@ -1,15 +1,9 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 import HeroSection from "@/components/HeroSection";
 import AnimatedImage from "@/components/AnimatedImage";
 
 export default function ContactPage() {
-  const { ref, inView } = useInView({
-    triggerOnce: true, // Ensures animation happens once
-    threshold: 0.1, // Triggers animation when 10% of the component is visible
-  });
   return (
     <>
       <HeroSection
@@ -21,7 +15,7 @@ export default function ContactPage() {
         headingSize="text-8xl md:text-9xl"
         headingWeight="font-semibold"
         headingTracking="tracking-[-6px] md:tracking-[-10px]"
-        paragraph="Let's connect and create something impactful. I bring together strategy, research, and technology to craft intuitive experiences that engage users and drive real results. If you're ready to build something that matters, reach out—I'd love to collaborate."
+        paragraph="Let's connect and create something impactful. I bring together strategy, research, and technology to craft intuitive experiences that engage users and drive real results. If you're ready to build something that matters, reach out - I'd love to collaborate."
         paragraphColor="text-zinc-500"
         initialAnimation={{ y: "100%" }}
         mainTransition={{
@@ -35,7 +29,7 @@ export default function ContactPage() {
         <div className="flex flex-col gap-20 md:flex-row">
           <div>
             <h2 className="mb-8 flex-1 font-sans text-4xl font-bold tracking-tighter text-zinc-600">
-              Got ideas? I've got the skills.
+              Got ideas? I have got the skills.
             </h2>
             <div className="font-xl mb-4 font-sans text-black">
               Email me for inquires, questions or a quick chat about your

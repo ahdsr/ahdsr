@@ -57,7 +57,7 @@ export default function Beacon() {
         {/* Intro */}
         <div className="mx-auto flex flex-col gap-8 border-t border-t-zinc-300 py-12 font-sans md:flex-row md:py-24">
           <div className="flex-1 text-xl font-light tracking-normal text-zinc-600 md:text-2xl md:font-thin">
-            Beacon mobile is FIS's white label mobile banking platform. It is
+            Beacon mobile is the FIS white label mobile banking platform. It is
             used by many local and independent banks all over the US.
           </div>
           <div className="mb-8 text-5xl font-medium tracking-tighter text-zinc-800">
@@ -95,7 +95,7 @@ export default function Beacon() {
           <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
             As a designer on the Design System team, my responsibility is to
             review existing Beacon screens and flows, applying the new design
-            system's look and feel to ensure consistency. Additionally, I am
+            design system look and feel to ensure consistency. Additionally, I am
             responsible for improving existing interactions, suggesting more
             efficient workflows, and ensuring alignment with the new design
             system being rolled out at FIS.

@@ -1,6 +1,5 @@
 import { Analytics } from "@vercel/analytics/react";
 import { PostHogProvider } from "@/components/PostHogProvider";
-import PostHogPageView from "@/components/PostHogPageView";
 // import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -25,7 +24,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Analytics />
       <body
       // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
@@ -36,11 +34,11 @@ export default function RootLayout({ children }) {
           </div>
 
           {/* Content with padding to prevent overlap */}
-          <PostHogPageView />
           <main className="relative top-0 bg-white">{children}</main>
           <div className="bg-white">
             <Footer />
           </div>
+          <Analytics />
         </PostHogProvider>
       </body>
     </html>

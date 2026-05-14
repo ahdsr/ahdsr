@@ -37,7 +37,7 @@ export default function BlogPage() {
             <p className="mb-6">
               I rarely spent time talking about my work on my previous sites,
               and just showed the final products. This was an error on my part,
-              as it didn't do some of the projects any justice. The process
+              as it did not do some of the projects any justice. The process
               behind the work – the challenges, solutions, and creative
               decisions – is just as important as the outcome itself. This new
               site aims to bridge that gap by offering a deeper dive into how my

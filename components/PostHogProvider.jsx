@@ -10,8 +10,8 @@ export function PostHogProvider({ children }) {
     posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY, {
       api_host: "/ingest",
       ui_host: "https://us.posthog.com",
-      capture_pageview: true, // We capture pageviews manually
-      capture_pageleave: true, // Enable pageleave capture
+      capture_pageview: false,
+      capture_pageleave: true,
       session_recording: {
         recordCanvas: true,
       },

@@ -1,46 +1,32 @@
 "use client";
-import { useState, useEffect } from "react";
+
+import { motion, useScroll, useTransform } from "framer-motion";
 
 export default function ParallaxSection({ mediaSrc, isVideo = false }) {
-  const [offset, setOffset] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setOffset(window.scrollY * 0.3); // Reduced parallax speed to minimize gaps
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  const { scrollY } = useScroll();
+  const y = useTransform(scrollY, [0, 1200], [0, 160]);
+  const mediaClassName =
+    "absolute left-0 top-[-15%] h-[160%] min-h-[160vh] w-full object-cover object-center";
 
   return (
     <div className="relative h-screen w-full overflow-hidden bg-black">
-      <div className="absolute inset-0" style={{ overflow: "hidden" }}>
+      <div className="absolute inset-0 overflow-hidden">
         {isVideo ? (
-          <video
-            className="absolute left-0 top-[-15%] h-[160%] w-full object-cover"
+          <motion.video
+            className={mediaClassName}
             src={mediaSrc}
             autoPlay
             loop
             muted
-            style={{
-              transform: `translateY(${offset * 0.3}px) scale(1.05)`, // Reduced movement and slight scale up
-              objectFit: "cover",
-              objectPosition: "center center",
-              minHeight: "160vh", // Increased height for better coverage
-            }}
+            playsInline
+            style={{ y, scale: 1.05 }}
           />
         ) : (
-          <img
-            className="absolute left-0 top-[-15%] h-[160%] w-full object-cover"
+          <motion.img
+            className={mediaClassName}
             src={mediaSrc}
             alt="Parallax Background"
-            style={{
-              transform: `translateY(${offset * 0.3}px) scale(1.05)`, // Reduced movement and slight scale up
-              objectFit: "cover",
-              objectPosition: "center center",
-              minHeight: "160vh", // Increased height for better coverage
-            }}
+            style={{ y, scale: 1.05 }}
           />
         )}
       </div>

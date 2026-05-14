@@ -206,7 +206,7 @@ export default function Quest() {
         {/* Bundling */}
         <div className="mx-auto flex flex-col gap-8 gap-x-8 py-12 font-sans md:flex-row md:py-24">
           <div className="mb-8 flex-1 text-2xl font-medium tracking-tighter text-zinc-800 md:text-5xl">
-            Bundling? We've got it.
+            Bundling? We have got it.
           </div>
           <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
             Bundling posed challenges—not in the user journey, but in defining
@@ -221,7 +221,7 @@ export default function Quest() {
                 A toggle and animation to show price savings
               </li>
               <li className="border-b border-b-zinc-300 py-4">
-                Highlighting a clear "winning" choice in the middle
+                Highlighting a clear &quot;winning&quot; choice in the middle
               </li>
               <li className="border-b border-b-zinc-300 py-4">
                 Ability to look up what the coverages meant with tooltips

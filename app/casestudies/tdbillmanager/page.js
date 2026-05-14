@@ -132,7 +132,7 @@ export default function TDBillManager() {
             Since this was an improvement, we needed a way to promote and let
             users enroll in the new experience. The onboarding would entice
             users to learn about what they can get by enrolling, and there was
-            not much else to it. They only had to press the "Let's Go" button
+            not much else to it. They only had to press the &quot;Let&apos;s Go&quot; button
             and then the system would start to automatically search for the
             users bills.
           </div>

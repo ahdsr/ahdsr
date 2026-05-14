@@ -1,21 +1,15 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 
 export default function VideoSection({ videoSrc, overlayText = "" }) {
-  const { ref, inView } = useInView({
-    triggerOnce: true, // Ensures animation happens once
-    threshold: 0.1, // Triggers animation when 10% of the component is visible
-  });
-
   const overlayEnabled = overlayText.trim() !== "";
 
   return (
     <motion.div
-      ref={ref}
-      initial={{ opacity: 0, y: -50 }}
-      animate={inView ? { opacity: 1, y: 0 } : {}}
+      initial={false}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.1 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
       className="relative mx-auto my-4 flex w-full max-w-7xl items-center justify-center"
     >
