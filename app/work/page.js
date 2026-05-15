@@ -12,7 +12,7 @@ export default function WorkPage() {
         headingSize="text-8xl md:text-9xl"
         headingWeight="font-semibold"
         headingTracking="tracking-[-6px] md:tracking-[-10px]"
-        paragraph=""
+        paragraph="A collection of client work, conceptual projects, and visual explorations across product design, UX, UI, and design systems."
         initialAnimation={{ y: "100%" }}
         mainTransition={{
           duration: 0.3,

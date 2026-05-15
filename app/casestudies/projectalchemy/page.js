@@ -7,8 +7,12 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 const caseStudies = [
+  { slug: "unify", title: "Unify Design System" },
+  { slug: "beacon", title: "Beacon Mobile" },
   { slug: "codeconnect", title: "Code Connect" },
   { slug: "quest", title: "Quest Insurance" },
+  { slug: "tddashboards", title: "TD Dashboards" },
+  { slug: "tdbillmanager", title: "TD Bill Manager" },
   { slug: "beon", title: "Beon" },
   { slug: "projectalchemy", title: "Project Alchemy" },
 ];
@@ -40,7 +44,7 @@ export default function ProjectAlchemy() {
             backgroundColor="bg-orange-500 bg-opacity-80"
             paddingTop="pt-24"
             paddingBottom="pb-24"
-            heading="Alchemy."
+            heading="Project Alchemy"
             headingSize="text-4xl sm:text-7xl"
             headingWeight="font-semibold"
             headingTracking="tracking-tighter"
@@ -48,7 +52,7 @@ export default function ProjectAlchemy() {
             headingHighlightColor="text-gray-300"
             secondHighlight="UX Design"
             secondHighlightColor="text-gray-300"
-            paragraph="AI-powered tool designed to streamline and enhance meeting documentation."
+            paragraph="An AI-powered tool for clearer meeting documentation."
             paragraphSize="text-base"
             paragraphWeight="font-light"
             paragraphColor="text-gray-300"
@@ -60,14 +64,10 @@ export default function ProjectAlchemy() {
         {/* Intro */}
         <div className="mx-auto flex flex-col gap-8 border-t border-t-zinc-300 py-12 font-sans md:flex-row md:py-24">
           <div className="flex-1 text-xl font-light tracking-normal text-zinc-600 md:text-2xl md:font-thin">
-            Project Alchemy is an AI-powered tool designed to streamline and
-            enhance meeting documentation. Initially developed to solve the
-            challenge of capturing and organizing discussions, it enables users
-            to efficiently generate summaries, extract key insights, and
-            retrospectively review meeting transcripts. Unlike traditional
-            note-taking methods, Project Alchemy leverages AI to reduce manual
-            effort, ensuring that important conversations are documented without
-            disrupting workflow.
+            Project Alchemy is an AI-powered tool for capturing, organizing, and
+            reviewing meeting documentation. It helps users generate summaries,
+            extract key insights, and review transcripts without relying on
+            manual note-taking during the meeting.
           </div>
           <div className="mb-8 text-5xl font-medium tracking-tighter text-zinc-800">
             <div className="mb-4">
@@ -102,8 +102,8 @@ export default function ProjectAlchemy() {
             My role & team
           </div>
           <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
-            My role on our small team is project strategy, vision, and of course
-            my UX and UI expertise.
+            On a small team, I contributed to product strategy, product vision,
+            UX, and UI design.
           </div>
         </div>
 
@@ -113,21 +113,11 @@ export default function ProjectAlchemy() {
             Concept creation
           </div>
           <div className="flex-1 font-sans tracking-tight text-zinc-600 md:text-base">
-            Project Alchemy is not just another AI-powered meeting documentation
-            tool—it’s the bridge between conversations and real, working
-            projects. Unlike existing solutions like Otter.ai, Tactiq, or
-            Sembly, which focus primarily on summarization, Project Alchemy is
-            designed with the next step in mind: turning documentation into
-            actionable, AI-driven execution. Our goal is to create structured,
-            AI-optimized documentation that seamlessly integrates with tools
-            like Cursor and Aider, allowing teams to transform discussions into
-            fully developed working code. By enhancing documentation quality and
-            context, Project Alchemy enables AI agents to generate, refine, and
-            execute projects with minimal human intervention. This means faster
-            iteration cycles, reduced development overhead, and a direct path
-            from ideation to implementation. With a focus on precision,
-            structure, and AI-driven workflow automation, Project Alchemy is not
-            just about keeping records—it’s about accelerating innovation.
+            The concept focused on moving beyond meeting summaries. Project
+            Alchemy explored how structured meeting documentation could support
+            AI-assisted execution by giving tools like Cursor and Aider clearer
+            context. The goal was to turn discussions into better source
+            material for planning, coding, and follow-up work.
           </div>
         </div>
         <VideoSection

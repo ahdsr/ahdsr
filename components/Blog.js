@@ -9,75 +9,16 @@ import Link from "next/link";
 // Define multiple sections with their own projects
 const sections = [
   {
-    category: "1",
+    category: "Notes",
     projects: [
       {
         title: "Site Relaunch 2025",
         description:
-          "With 2024 ending, and my old portfolio site development progress interrupted with another contract gig, I decided to take a new direction with this one and make some updates.",
+          "Why I rebuilt the portfolio around clearer case studies, stronger project context, and more useful writing.",
         date: "Feb 26, 2025",
         link: "/blog/sitereleaunch2025/",
         image: "/images/featured/codeconnect/Codeconnect_Thumb.png",
         bgColor: "bg-emerald-500",
-      },
-      {
-        title: "Project Alchemy",
-        description: "Site Redesign",
-        link: "/casestudies/projectalchemy",
-        image: "/images/featured/projectalchemy/ProjectAlchemy_Thumb.png",
-        bgColor: "bg-orange-500",
-      },
-      {
-        title: "Project Alchemy",
-        description: "Site Redesign",
-        link: "/casestudies/projectalchemy",
-        image: "/images/featured/projectalchemy/ProjectAlchemy_Thumb.png",
-        bgColor: "bg-orange-500",
-      },
-    ],
-  },
-  {
-    category: "2",
-    projects: [
-      {
-        title: "BEON",
-        description: "E-Commerce Platform",
-        link: "/casestudies/beon",
-        image: "/images/global/na.png",
-        bgColor: "bg-blue-500",
-      },
-      {
-        title: "Another Project",
-        description: "Marketplace Expansion",
-        link: "/casestudies/anotherproject",
-        image: "/images/global/na.png",
-        bgColor: "bg-purple-500",
-      },
-      {
-        title: "Another Project",
-        description: "Marketplace Expansion",
-        link: "/casestudies/anotherproject",
-        image: "/images/global/na.png",
-        bgColor: "bg-purple-500",
-      },
-    ],
-  },
-  {
-    category: "3",
-    projects: [
-      {
-        title: "BEON",
-        description: "E-Commerce Platform",
-        link: "/casestudies/newproject",
-        image: "/images/other/RoomRender_Thumb.png",
-        bgColor: "bg-blue-500",
-      },
-      {
-        title: "Another Project",
-        description: "Marketplace Expansion",
-        link: "/casestudies/anotherproject",
-        image: "/images/other/LaptopRender_Thumb.png",
-        bgColor: "bg-purple-500",
       },
     ],
   },
@@ -101,7 +42,7 @@ export default function Blog() {
     <section className="mx-auto max-w-7xl px-8 md:px-20">
       {/* Filter Buttons */}
       <div className="justify-left mb-12 flex space-x-4">
-        {["All", "1", "2", "3"].map((category) => (
+        {["All", "Notes"].map((category) => (
           <button
             key={category}
             onClick={() => setSelectedCategory(category)}
@@ -120,7 +61,7 @@ export default function Blog() {
       {filteredSections.map((section, sectionIndex) => (
         <div key={sectionIndex} className="border-t border-t-zinc-300 pt-16">
           {/* Project List */}
-          <div className="mb-48 grid grid-cols-3 gap-12">
+          <div className="mb-48 grid grid-cols-1 gap-12 md:grid-cols-3">
             {section.projects.map((project, projectIndex) => (
               <div key={projectIndex} className="">
                 <div
@@ -150,6 +91,11 @@ export default function Blog() {
                 <p className="font-light text-zinc-400">
                   {project.description}
                 </p>
+                {project.date && (
+                  <p className="mt-2 font-mono text-xs text-zinc-500">
+                    {project.date}
+                  </p>
+                )}
               </div>
             ))}
           </div>

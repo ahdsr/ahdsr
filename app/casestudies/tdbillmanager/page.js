@@ -7,8 +7,12 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 const caseStudies = [
+  { slug: "unify", title: "Unify Design System" },
+  { slug: "beacon", title: "Beacon Mobile" },
   { slug: "codeconnect", title: "Code Connect" },
   { slug: "quest", title: "Quest Insurance" },
+  { slug: "tddashboards", title: "TD Dashboards" },
+  { slug: "tdbillmanager", title: "TD Bill Manager" },
   { slug: "beon", title: "Beon" },
   { slug: "projectalchemy", title: "Project Alchemy" },
 ];
@@ -56,20 +60,12 @@ export default function TDBillManager() {
         {/* Intro */}
         <div className="mx-auto flex flex-col gap-8 border-t border-t-zinc-300 py-12 font-sans md:flex-row md:py-24">
           <div className="flex-1 text-xl font-light tracking-normal text-zinc-600 md:text-2xl md:font-thin">
-            TD Bill Pay is a digital payment solution that allows users to pay
-            bills conveniently and securely from their TD Bank account. Designed
-            for ease of use, it enables customers to pay virtually anyone in the
-            U.S., set up electronic billing, and manage payments efficiently.
-            The platform provides both ACH electronic transfers and paper check
-            options, catering to a wide range of billers. As part of ongoing
-            enhancements, the project introduced improvements to the biller
-            enrollment process. TD Bank partnered with a vendor that allows
-            users to find all their billers automatically by simply entering the
-            name and mailing address. This feature streamlines the setup
-            process, reducing manual entry and ensuring greater accuracy when
-            adding new billers. This case study highlights the user experience
-            of TD Bill Pay, outlining its key features, payment processing
-            methods, and best practices for seamless financial management.
+            TD Bill Pay lets U.S. banking customers pay bills from their TD Bank
+            account, set up electronic billing, and manage payments through ACH
+            transfers or paper checks. This project improved biller enrollment
+            by helping users find billers automatically through a vendor-powered
+            search using name and mailing address, reducing manual entry during
+            setup.
           </div>
           <div className="mb-8 text-5xl font-medium tracking-tighter text-zinc-800">
             <div className="mb-4">
@@ -104,10 +100,9 @@ export default function TDBillManager() {
             My role
           </div>
           <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
-            My primary role on the project was to create all the new UI elements
-            this experience needed. It challenged me to introduce a new visual
-            language that can play nice with the existing styling and look &
-            feel of the app.
+            My primary role was to design the new UI elements needed for the
+            experience. The work required a visual language that felt fresh
+            while still fitting within the existing app.
           </div>
         </div>
 
@@ -122,19 +117,16 @@ export default function TDBillManager() {
             Onboarding Flow
           </div>
         </div>
-        {/* Make the journey short and easy!!! */}
+        {/* Onboarding */}
         <div className="mx-auto flex flex-col gap-x-8 py-12 font-sans md:flex-row md:py-24">
           <div className="mb-8 flex-1 text-2xl font-medium tracking-tighter text-zinc-800 md:text-5xl">
-            Onboarding onto the new experience
+            Onboarding into the new experience
           </div>
           <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
-            TD US Banking app users already had the ability to pay for bills.
-            Since this was an improvement, we needed a way to promote and let
-            users enroll in the new experience. The onboarding would entice
-            users to learn about what they can get by enrolling, and there was
-            not much else to it. They only had to press the &quot;Let&apos;s Go&quot; button
-            and then the system would start to automatically search for the
-            users bills.
+            TD U.S. Banking app users could already pay bills, so the team
+            needed a simple way to introduce and enroll users in the improved
+            experience. The onboarding explained the benefits, then let users
+            start the automatic bill search with a single &quot;Let&apos;s Go&quot; action.
           </div>
         </div>
         <AnimatedImage
@@ -153,17 +145,16 @@ export default function TDBillManager() {
             Onboarding Experience - A
           </div>
         </div>
-        {/* Make the journey short and easy!!! */}
+        {/* Onboarding testing */}
         <div className="mx-auto flex flex-col gap-x-8 py-12 font-sans md:flex-row md:py-24">
           <div className="mb-8 flex-1 text-2xl font-medium tracking-tighter text-zinc-800 md:text-5xl">
-            Testing onboarding experience
+            Testing the onboarding experience
           </div>
           <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
-            We tested two sets of onboarding flows with users. The above
-            required users to first enroll and accept terms and conditions, and
-            at that point the would get to see what the feature was about. The B
-            experience below front loaded the terms and conditions and then the
-            user would learn about the features.
+            We tested two onboarding flows. In the first, users enrolled and
+            accepted terms before learning more about the feature. In the second,
+            terms and conditions appeared earlier, followed by feature
+            education.
           </div>
         </div>
         <AnimatedImage
@@ -182,16 +173,16 @@ export default function TDBillManager() {
             Onboarding Experience - B
           </div>
         </div>
-        {/* Make the journey short and easy!!! */}
+        {/* Biller search */}
         <div className="mx-auto flex flex-col gap-x-8 py-12 font-sans md:flex-row md:py-24">
           <div className="mb-8 flex-1 text-2xl font-medium tracking-tighter text-zinc-800 md:text-5xl">
-            Adding new Billers
+            Adding new billers
           </div>
           <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
-            Search for billers not found by the system can be added manually by
-            searching the biller name. The improvement allows for easier
-            identification of billers by introducing the merchant logo. This was
-            part of the purchased vendor solution.
+            Users could manually add billers that were not found automatically
+            by searching for the biller name. Merchant logos helped users
+            identify the correct biller more easily as part of the vendor
+            solution.
           </div>
         </div>
         <AnimatedImage
@@ -207,13 +198,13 @@ export default function TDBillManager() {
             Adding billers
           </div>
         </div>
-        {/* Make the journey short and easy!!! */}
+        {/* Responsive layouts */}
         <div className="mx-auto flex flex-col gap-x-8 py-12 font-sans md:flex-row md:py-24">
           <div className="mb-8 flex-1 text-2xl font-medium tracking-tighter text-zinc-800 md:text-5xl">
             Responsive experience
           </div>
           <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
-            The bill list, and the pay bill page illustrated on the tablet.
+            Tablet layouts for the bill list and pay bill flow.
           </div>
         </div>
         <AnimatedImage

@@ -61,10 +61,10 @@ const projectVariants = {
 // Define multiple sections with their own projects
 const sections = [
   {
-    title: "Use Cases",
-    category: "Use Cases",
+    title: "Case Studies",
+    category: "Case Studies",
     description:
-      "From ideas to impact — these selected case studies showcase the breadth of my UX, UI, and product thinking. Each project highlights a different facet of my work: from early concept development to hands-on design and front-end implementation. Together, they reflect my approach to crafting intuitive, engaging, and user-centered digital experiences.",
+      "Selected case studies across product strategy, UX, UI, design systems, and front-end implementation. Each project shows how I frame problems, shape the user experience, and move ideas toward usable products.",
     projects: [
       {
         title: "Unify Design System",
@@ -114,7 +114,7 @@ const sections = [
     title: "Conceptual",
     category: "Conceptual",
     description:
-      "Exploring bold ideas—projects that started or remained as concepts beyond client work. These creative explorations push boundaries, challenge industry norms, and serve as a testing ground for fresh, innovative approaches to digital solutions.",
+      "Self-directed concepts and early-stage product ideas outside client work. These projects show how I explore strategy, structure, and interaction before a product moves into delivery.",
     projects: [
       {
         title: "BEON",
@@ -133,10 +133,10 @@ const sections = [
     ],
   },
   {
-    title: "All Other",
+    title: "Explorations",
     category: "3D",
     description:
-      "A showcase of personal creativity, including design, rendering, photography, and animation. This space highlights passion projects, experimental work, and artistic expressions that inspire and influence my professional design process.",
+      "Personal explorations in rendering, photography, animation, and visual design that support my broader product design practice.",
     projects: [
       {
         title: "Rendering",
@@ -175,7 +175,7 @@ export default function Work() {
     <section className="mx-auto max-w-7xl" id="trigger-section">
       {/* Filter Buttons */}
       <div className="justify-left mb-12 mt-8 flex space-x-4">
-        {["All", "Use Cases", "Conceptual", "3D"].map((category) => (
+        {["All", "Case Studies", "Conceptual", "3D"].map((category) => (
           <MotionButton
             key={category}
             text={category}

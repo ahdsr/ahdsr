@@ -8,8 +8,12 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 const caseStudies = [
+  { slug: "unify", title: "Unify Design System" },
+  { slug: "beacon", title: "Beacon Mobile" },
   { slug: "codeconnect", title: "Code Connect" },
   { slug: "quest", title: "Quest Insurance" },
+  { slug: "tddashboards", title: "TD Dashboards" },
+  { slug: "tdbillmanager", title: "TD Bill Manager" },
   { slug: "beon", title: "Beon" },
   { slug: "projectalchemy", title: "Project Alchemy" },
 ];
@@ -57,8 +61,8 @@ export default function Beacon() {
         {/* Intro */}
         <div className="mx-auto flex flex-col gap-8 border-t border-t-zinc-300 py-12 font-sans md:flex-row md:py-24">
           <div className="flex-1 text-xl font-light tracking-normal text-zinc-600 md:text-2xl md:font-thin">
-            Beacon mobile is the FIS white label mobile banking platform. It is
-            used by many local and independent banks all over the US.
+            Beacon Mobile is FIS&apos;s white-label mobile banking platform, used by
+            local and independent banks across the U.S.
           </div>
           <div className="mb-8 text-5xl font-medium tracking-tighter text-zinc-800">
             <div className="mb-4">
@@ -82,7 +86,7 @@ export default function Beacon() {
                 Duration
               </p>
               <p className="font-sans text-lg font-medium tracking-tighter text-zinc-600 md:text-xl">
-                6 months - current
+                6 months, ongoing
               </p>
             </div>
           </div>
@@ -93,12 +97,11 @@ export default function Beacon() {
             My role & team
           </div>
           <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
-            As a designer on the Design System team, my responsibility is to
-            review existing Beacon screens and flows, applying the new design
-            design system look and feel to ensure consistency. Additionally, I am
-            responsible for improving existing interactions, suggesting more
-            efficient workflows, and ensuring alignment with the new design
-            system being rolled out at FIS.
+            As a designer on the Design System team, I review existing Beacon
+            screens and flows, apply the new design system, and improve
+            interactions where the workflow can be clearer or more efficient.
+            The work helps align Beacon with the design system being rolled out
+            across FIS.
           </div>
         </div>
 

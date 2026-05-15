@@ -46,20 +46,14 @@ export default function ThreeDPage() {
         {/* My Role & Team */}
         <div className="mx-auto flex flex-col gap-8 border-t border-t-zinc-300 py-12 font-sans md:flex-row md:py-24">
           <div className="mb-8 flex-1 text-2xl font-medium tracking-tighter text-zinc-800 md:text-5xl">
-            A Journey in Design & Visualization
+            Design and visualization
           </div>
           <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
-            3D rendering has always been a passion of mine—an avenue where
-            creativity meets technology. As part of my learning and development,
-            I’ve explored different techniques to bring ideas to life in a
-            three-dimensional space. This collection showcases my journey in 3D
-            modeling, texturing, and rendering, experimenting with light, form,
-            and composition. Whether it’s product visualization, architectural
-            concepts, or artistic explorations, each piece reflects my curiosity
-            and drive to push creative boundaries. I’m continuously learning,
-            refining my craft, and finding new ways to merge 3D with UX,
-            storytelling, and interactive experiences. Take a look at my work
-            and feel free to reach out—I’d love to collaborate or discuss ideas!
+            This collection shows personal explorations in 3D modeling,
+            texturing, lighting, and rendering. The work includes product
+            visualization, architectural concepts, and visual experiments that
+            help me explore form, composition, and storytelling in digital
+            experiences.
           </div>
         </div>
       </div>

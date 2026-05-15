@@ -7,8 +7,12 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 const caseStudies = [
+  { slug: "unify", title: "Unify Design System" },
+  { slug: "beacon", title: "Beacon Mobile" },
   { slug: "codeconnect", title: "Code Connect" },
   { slug: "quest", title: "Quest Insurance" },
+  { slug: "tddashboards", title: "TD Dashboards" },
+  { slug: "tdbillmanager", title: "TD Bill Manager" },
   { slug: "beon", title: "Beon" },
   { slug: "projectalchemy", title: "Project Alchemy" },
 ];
@@ -56,12 +60,10 @@ export default function TDDashboards() {
         {/* Intro */}
         <div className="mx-auto flex flex-col gap-8 border-t border-t-zinc-300 py-12 font-sans md:flex-row md:py-24">
           <div className="flex-1 text-xl font-light tracking-normal text-zinc-600 md:text-2xl md:font-thin">
-            TD needed to enhance its online banking application. Our goal was to
-            inform customers about its features before account creation or
-            online banking registration. We achieved this by developing a pre
-            and post-sign-on dashboard that displayed balances, provided
-            AI-driven insights, and showcased relevant information on the
-            homepage.
+            TD needed to improve how customers discovered and used online
+            banking features before and after sign-on. We designed dashboard
+            concepts that displayed balances, surfaced AI-driven insights, and
+            highlighted relevant information on the homepage.
           </div>
           <div className="mb-8 text-5xl font-medium tracking-tighter text-zinc-800">
             <div className="mb-4">
@@ -102,12 +104,10 @@ export default function TDDashboards() {
             </div> */}
           </div>
           <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
-            TD needed to enhance its online banking application. Our goal was to
-            inform customers about its features before account creation or
-            online banking registration. We achieved this by developing a pre-
-            and post-sign-on dashboard that displayed balances, provided
-            AI-driven insights, and showcased relevant information on the
-            homepage.
+            The work explored how dashboards could better support customers at
+            different stages of the online banking experience. Pre- and
+            post-sign-on concepts helped clarify account information, surface
+            useful insights, and give the homepage a stronger product role.
           </div>
         </div>
 
@@ -117,7 +117,7 @@ export default function TDDashboards() {
         />
         <div>
           <div className="mb-24 mt-2 border-b border-b-zinc-300 pb-2 text-right font-sans text-xs tracking-tight text-black">
-            Evolution of designs
+            Design evolution
           </div>
         </div>
         <AnimatedImage
@@ -136,7 +136,7 @@ export default function TDDashboards() {
         />
         <div>
           <div className="mb-24 mt-2 border-b border-b-zinc-300 pb-2 text-right font-sans text-xs tracking-tight text-black">
-            Documentation and spec work for developers
+            Developer documentation and specs
           </div>
         </div>
         <AnimatedImage
@@ -148,7 +148,7 @@ export default function TDDashboards() {
         />
         <div>
           <div className="mt-2 border-b border-b-zinc-300 pb-2 text-right font-sans text-xs tracking-tight text-black">
-            Examples of iconography work for Cards
+            Iconography examples for cards
           </div>
         </div>
       </div>

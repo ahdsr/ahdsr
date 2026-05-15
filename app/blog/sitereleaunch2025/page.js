@@ -7,10 +7,10 @@ export default function BlogPage() {
         backgroundColor="bg-blue-800"
         paddingTop="pt-12"
         paddingBottom="pb-64"
-        heading="Blog blog."
-        headingHighlight="blog"
+        heading="Notes on design and development."
+        headingHighlight="design"
         headingHighlightColor="text-white"
-        paragraph="Thoughts, insights, and occasional design musings—sometimes profound, sometimes just me thinking out loud."
+        paragraph="Short reflections on portfolio work, design process, and product decisions."
         paragraphColor="text-white"
         headingSize="text-7xl"
         headingWeight="font-semibold"
@@ -27,60 +27,47 @@ export default function BlogPage() {
 
           <div className="mt-2 max-w-2xl text-xl">
             <h2 className="my-8 font-sans text-2xl font-semibold tracking-tight text-zinc-500">
-              It was time for a change edit
+              Why I rebuilt the portfolio
             </h2>
             <p className="mb-6">
-              With 2024 ending, and my old portfolio site development progress
-              interrupted with another contract gig, I decided to take a new
-              direction with this one and make some updates.
+              Near the end of 2024, work on my previous portfolio slowed while
+              I focused on contract work. When I returned to it, I decided to
+              rethink the site instead of continuing in the same direction.
             </p>
             <p className="mb-6">
-              I rarely spent time talking about my work on my previous sites,
-              and just showed the final products. This was an error on my part,
-              as it did not do some of the projects any justice. The process
-              behind the work – the challenges, solutions, and creative
-              decisions – is just as important as the outcome itself. This new
-              site aims to bridge that gap by offering a deeper dive into how my
-              projects come together.
+              Previous versions focused too heavily on final visuals and did
+              not give enough context for the thinking behind the work. The
+              process, constraints, decisions, and tradeoffs are often as
+              important as the outcome. This version gives each project more
+              room to explain how the work came together.
             </p>
             <h2 className="my-8 font-sans text-2xl font-semibold tracking-tight text-zinc-500">
-              Why the Change?
+              Why the change?
             </h2>
             <p className="mb-6">
-              In the fast-paced world of design and development, showcasing a
-              polished portfolio isn’t enough. Potential collaborators or
-              clients want to understand how you think, how you solve problems,
-              and how you adapt to challenges. I wanted my portfolio to be more
-              than a gallery – it’s now a space to tell the stories behind the
-              work.
+              A polished portfolio is useful, but it is not enough on its own.
+              Collaborators and clients need to understand how a designer thinks,
+              solves problems, and adapts to constraints. I wanted the site to
+              work less like a gallery and more like a clear record of project
+              decisions.
             </p>
             <h2 className="my-8 font-sans text-2xl font-semibold tracking-tight text-zinc-500">
-              Whats New?
+              What&apos;s new?
             </h2>{" "}
             <p className="mb-6">
-              Case Studies: Each project now includes a detailed case study,
-              walking you through the initial problem, the strategy behind the
-              solution, and the steps taken to execute it. Tools and
-              Technologies: I’ve added a section for each project detailing the
-              tools and technologies used. Whether it’s a programming language,
-              design software, or frameworks, it’s all there. Lessons Learned:
-              Reflecting on what I gained from each project—whether it’s a
-              technical skill, a new workflow, or insight into
-              collaboration—helps paint a fuller picture of my growth as a
-              professional.
-            </p>{" "}
-            Blog Section: Beyond showcasing projects, I’ll also be sharing
-            thoughts on industry trends, tips, and tricks I’ve picked up along
-            the way, and reflections on my journey. ## Looking Ahead This
-            portfolio is not just a culmination of the past but a foundation for
-            the future. As I continue to work on exciting projects, I’ll be
-            updating the site regularly to keep it fresh and relevant. My hope
-            is that it not only showcases my skills but also sparks
-            conversations and connections. To anyone thinking about updating
-            their portfolio: don’t just show what you’ve done; show how and why
-            you did it. That’s where the magic happens. Thank you for taking the
-            time to check out my new site. Feel free to explore, and let me know
-            what you think!
+              The updated site gives case studies more structure, including the
+              project context, problem, design direction, and execution details.
+              It also creates space for notes on process, product decisions, and
+              lessons learned from the work.
+            </p>
+            <h2 className="my-8 font-sans text-2xl font-semibold tracking-tight text-zinc-500">
+              Looking ahead
+            </h2>
+            <p className="mb-6">
+              I will continue refining the portfolio as new projects are ready
+              to share. The goal is simple: show the work, explain the thinking,
+              and make it easier for people to understand where I can contribute.
+            </p>
           </div>
         </div>
       </div>

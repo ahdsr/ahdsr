@@ -11,8 +11,8 @@ const sections = [
   {
     title: "Client digital products",
     description:
-      "This category highlights end-to-end client projects, from strategy and UX/UI design. ",
-    cta: "Learn more",
+      "Selected client work across product strategy, UX, UI, design systems, and implementation support.",
+    cta: "View work",
     number: "1",
     projects: [
       {
@@ -47,20 +47,21 @@ const sections = [
   },
   {
     title: "Conceptual",
-    description: "A collection of personal projects outside client work.  ",
-    cta: "Learn more",
+    description:
+      "Self-directed product concepts used to explore strategy, interaction patterns, and early-stage ideas.",
+    cta: "View concepts",
     number: "2",
     projects: [
       {
         title: "Beon",
-        description: "Site Redesign",
+        description: "Product Concept",
         link: "/casestudies/beon",
         image: "/images/featured/beon/BEON_Thumb.png",
         bgColor: "bg-orange-500",
       },
       {
         title: "Project Alchemy",
-        description: "Site Redesign",
+        description: "AI Product Concept",
         link: "/casestudies/projectalchemy",
         image: "/images/featured/projectalchemy/ProjectAlchemy_Thumb.png",
         bgColor: "bg-orange-500",
@@ -183,7 +184,7 @@ export default function Featured({ sectionList = sections }) {
           className="mt-24 max-w-5xl font-sans text-4xl font-black tracking-[-0.08em] text-black md:text-7xl"
           id="trigger-section"
         >
-          Use Cases
+          Selected Work
         </motion.h1>
       </div>
       <section className="mx-auto w-full max-w-7xl px-8 py-12 sm:px-20 md:py-24">

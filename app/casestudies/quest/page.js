@@ -7,8 +7,12 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 const caseStudies = [
+  { slug: "unify", title: "Unify Design System" },
+  { slug: "beacon", title: "Beacon Mobile" },
   { slug: "codeconnect", title: "Code Connect" },
   { slug: "quest", title: "Quest Insurance" },
+  { slug: "tddashboards", title: "TD Dashboards" },
+  { slug: "tdbillmanager", title: "TD Bill Manager" },
   { slug: "beon", title: "Beon" },
   { slug: "projectalchemy", title: "Project Alchemy" },
 ];
@@ -57,14 +61,11 @@ export default function Quest() {
         {/* Intro */}
         <div className="mx-auto flex flex-col gap-8 border-t border-t-zinc-300 py-12 font-sans md:flex-row md:py-24">
           <div className="flex-1 text-xl font-light tracking-normal text-zinc-600 md:text-2xl md:font-thin">
-            Questrade, a Canadian-owned trading platform, has been expanding
-            into full financial services with a clear mission: to empower
-            Canadians to take control of their financial futures. As part of
-            this growth, Quest Insurance was developed from the ground
-            up—encompassing strategy, product positioning, and the creation of
-            innovative customer journeys. The goal was to establish a
-            competitive presence in the auto and home insurance market,
-            delivering best-in-class experiences that rival industry leaders.
+            Questrade, a Canadian-owned trading platform, was expanding into
+            broader financial services with a mission to help Canadians take
+            control of their financial futures. Quest Insurance was developed
+            from the ground up, including strategy, product positioning, and new
+            customer journeys for auto and home insurance.
           </div>
           <div className="mb-8 text-5xl font-medium tracking-tighter text-zinc-800">
             <div className="mb-4">
@@ -99,10 +100,10 @@ export default function Quest() {
             My role & team
           </div>
           <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
-            I co-led research, product design, and UI/UX for the Quest Insurance
-            product, ensuring a seamless experience across all customer touch
-            points. Collaborating with a seasoned Canadian insurance development
-            team and a lean product director team.
+            I co-led research, product design, and UI/UX for Quest Insurance,
+            working with an experienced Canadian insurance development team and
+            a lean product leadership group to shape the end-to-end customer
+            experience.
           </div>
         </div>
         {/* Competitive landscape */}
@@ -112,15 +113,15 @@ export default function Quest() {
               Competitive landscape
             </div>
             <div className="text-lg font-light tracking-tight text-zinc-600 md:text-lg">
-              To design a best-in-class online quote journey, our first step was
-              to analyze the competition both within Canada and internationally.
+              To design a stronger online quote journey, our first step was to
+              analyze the competition both within Canada and internationally.
               We examined major financial institutions such as RBC and TD, as
               well as direct-to-consumer offerings like Onlia, Belairdirect,
               Aviva, and Sonnet. Our analysis focused on identifying unique
               features, evaluating the overall user journey, and assessing the
               complexity of the quoting process. We conducted deep dives into
               the number of questions and inputs required, the number of pages
-              users had to navigate, and how seamless the transition was from
+              users had to navigate, and how clear the transition was from
               receiving a quote to purchasing (or “binding”) a policy online.
               Additionally, we examined post-quote interactions, including
               emails and other touch points, to understand how competitors
@@ -150,23 +151,18 @@ export default function Quest() {
             Examples of research findings
           </div>
         </div>
-        {/* Make the journey short and easy!!! */}
+        {/* Quote journey */}
         <div className="mx-auto flex flex-col gap-x-8 py-12 font-sans md:flex-row md:py-24">
           <div className="mb-8 flex-1 text-2xl font-medium tracking-tighter text-zinc-800 md:text-5xl">
-            Make the journey short and easy!!!
+            Making the quote journey faster
           </div>
           <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
-            How many times have you heard that before? Well, in our case, it was
-            somewhat possible—at a cost. And there’s the catch you were
-            expecting. Pre-filling is a common UX pattern used to shorten the
-            time users spend on a task when some of their information is already
-            available. In the insurance world, however, this convenience comes
-            with a significant price tag. The journey supported pre-filling, but
-            the business had to weigh whether the cost justified the benefit.
-            User testing revealed that not a single participant objected to
-            entering their license number online. More importantly, this small
-            step shaved off several valuable minutes from the quote
-            process—proving that, in this case, convenience truly mattered.
+            We explored pre-filling as a way to reduce the time required to get
+            a quote. In insurance, that convenience can carry a significant
+            business cost, so the team had to weigh effort, cost, and customer
+            value. User testing showed that participants were comfortable
+            entering their license number online, and the step helped reduce the
+            quote process by several minutes.
           </div>
         </div>
         <AnimatedImage
@@ -184,7 +180,7 @@ export default function Quest() {
           src="/images/featured/quest/Quest-Prefill1.png"
           labels={[
             {
-              text: "User is asked to pre-fill with license number",
+              text: "Users can pre-fill with a license number",
               emoji: "🔥",
             },
           ]}
@@ -195,7 +191,7 @@ export default function Quest() {
           src="/images/featured/quest/Quest-Prefill2.png"
           labels={[
             {
-              text: "Upon a successful database return, users vehicles and driver info is pre-filled",
+              text: "Vehicle and driver information is pre-filled after a successful database match",
               emoji: "🔥",
             },
           ]}
@@ -206,26 +202,24 @@ export default function Quest() {
         {/* Bundling */}
         <div className="mx-auto flex flex-col gap-8 gap-x-8 py-12 font-sans md:flex-row md:py-24">
           <div className="mb-8 flex-1 text-2xl font-medium tracking-tighter text-zinc-800 md:text-5xl">
-            Bundling? We have got it.
+            Bundling coverage clearly
           </div>
           <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
-            Bundling posed challenges—not in the user journey, but in defining
-            the bundles themselves. While Canadians expected them, working with
-            underwriters and insurers to create clear distinctions was
-            difficult. The solution was an interstitial screen offering bundles
-            with a clear comparison just before getting to the full quote. The
-            team explored interactive elements and ways to highlight savings
-            effectively.
+            Bundling was less of an interaction challenge and more of a product
+            definition challenge. Customers expected bundled options, but the
+            team needed clear distinctions between coverage choices. We designed
+            an interstitial screen that presented bundle comparisons before the
+            full quote, with interaction patterns that made savings easier to
+            understand.
             <ul className="mt-8 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
               <li className="border-b border-b-zinc-300 py-4">
-                A toggle and animation to show price savings
+                A toggle and animation to show price savings.
               </li>
               <li className="border-b border-b-zinc-300 py-4">
-                Highlighting a clear &quot;winning&quot; choice in the middle
+                A clear recommended option in the center.
               </li>
               <li className="border-b border-b-zinc-300 py-4">
-                Ability to look up what the coverages meant with tooltips
-                content
+                Tooltip content to explain coverage terms.
               </li>
             </ul>
           </div>
@@ -240,7 +234,7 @@ export default function Quest() {
           src={["/images/featured/quest/Quest-Quote2.png"]}
           labels={[
             {
-              text: "Tooltips text, and expandable section to get context",
+              text: "Tooltips and expandable sections provide context",
               emoji: "👍",
             }, // First image has a label
           ]}
@@ -250,7 +244,7 @@ export default function Quest() {
           src={["/images/featured/quest/Quest-Quote3.png"]}
           labels={[
             {
-              text: "Distraction free layout to focus user attention to coverages",
+              text: "A focused layout keeps attention on coverage choices",
               emoji: "👍",
             }, // First image has a label
           ]}
@@ -260,25 +254,22 @@ export default function Quest() {
         {/* Responsive layouts */}
         <div className="mx-auto flex flex-col gap-x-8 py-12 font-sans md:flex-row md:py-24">
           <div className="mb-8 flex-1 text-2xl font-medium tracking-tighter text-zinc-800 md:text-5xl">
-            Responsive customer journeys for all
+            Responsive customer journeys
           </div>
           <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
-            A significant aspect of the work involved ensuring that the user
-            journeys were fully responsive across various devices while
-            maintaining consistency with the new design system, which was
-            evolving alongside our project. This required close collaboration
-            with both design and development teams to align our work with
-            evolving guidelines, components, and interaction patterns.
+            A significant part of the work was making each journey responsive
+            across devices while staying aligned with a new design system that
+            was evolving alongside the project. This required close
+            collaboration with design and development teams as guidelines,
+            components, and interaction patterns changed.
             <ul className="mt-8 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
               <li className="border-b border-b-zinc-300 py-4">
-                We focused on creating a fluid, adaptable experience by testing
-                layouts across different screen sizes and refining elements such
-                as typography, spacing, and interactive components.{" "}
+                Tested layouts across screen sizes and refined typography,
+                spacing, and interactive components.
               </li>
               <li className="border-b border-b-zinc-300 py-4">
-                Since the design system was still in development, we had to
-                remain flexible, frequently iterating on components to ensure
-                they met accessibility standards and usability best practices.
+                Iterated on components as the design system matured, with a
+                focus on accessibility and usability.
               </li>
             </ul>
           </div>

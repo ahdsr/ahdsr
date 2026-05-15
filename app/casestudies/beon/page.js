@@ -8,8 +8,12 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 const caseStudies = [
+  { slug: "unify", title: "Unify Design System" },
+  { slug: "beacon", title: "Beacon Mobile" },
   { slug: "codeconnect", title: "Code Connect" },
   { slug: "quest", title: "Quest Insurance" },
+  { slug: "tddashboards", title: "TD Dashboards" },
+  { slug: "tdbillmanager", title: "TD Bill Manager" },
   { slug: "beon", title: "Beon" },
   { slug: "projectalchemy", title: "Project Alchemy" },
 ];
@@ -22,8 +26,8 @@ const images = [
 
 const captions = [
   "Initial screen to engage with insights",
-  "Insights in relation to event",
-  "Spider chat to easily illustrate areas of strength and weakness",
+  "Insights related to an event",
+  "Spider chart showing strengths and weaknesses",
 ];
 
 export default function Beon() {
@@ -53,7 +57,7 @@ export default function Beon() {
             backgroundColor="bg-green-700 bg-opacity-10"
             paddingTop="pt-24"
             paddingBottom="pb-96"
-            heading="BEON Performance."
+            heading="BEON Performance"
             headingSize="text-4xl sm:text-7xl"
             headingWeight="font-semibold"
             headingTracking="tracking-tighter"
@@ -70,17 +74,11 @@ export default function Beon() {
         {/* Intro */}
         <div className="mx-auto flex flex-col gap-8 border-t border-t-zinc-300 py-12 font-sans md:flex-row md:py-24">
           <div className="flex-1 text-xl font-light tracking-normal text-zinc-600 md:text-2xl md:font-thin">
-            In collaboration with BEON Performance’s high-performance mindset
-            principles, I conceptualized an experience where users can track,
-            plan, and practice the ACT model—a structured approach to achieving
-            peak mental performance. This digital tool empowers users to gain
-            insights, track important events, and manage ACT models in a way
-            that enhances their ability to stay focused, build confidence, and
-            sharpen their competitive edge. Whether users aim to train their
-            minds for high performance, break bad habits, or optimize their
-            mental resilience, this experience provides a seamless,
-            user-centered platform that bridges performance psychology with
-            intuitive digital design.
+            In collaboration with BEON Performance, I conceptualized a digital
+            experience for tracking, planning, and practicing the ACT model, a
+            structured approach to mental performance. The concept helped users
+            manage ACT models, track important events, and review insights that
+            support focus, confidence, and resilience.
           </div>
           <div className="mb-8 text-5xl font-medium tracking-tighter text-zinc-800">
             <div className="mb-4">
@@ -115,15 +113,11 @@ export default function Beon() {
             My role & team
           </div>
           <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
-            My role on the team was to conceptualize the MVP for a digital
-            experience that would allow users to seamlessly apply the ACT model
-            in their everyday lives. This involved designing an intuitive app
-            experience for individuals looking to train their mindset daily,
-            enhance focus, and gain a competitive edge over their peers. My
-            process included brainstorming, user journey mapping, and
-            formulating a rough concept to assess whether BEON Performance was
-            interested in expanding beyond in-person seminars and one-on-one
-            coaching to include a scalable digital solution.
+            I conceptualized the MVP for a digital experience that would help
+            users apply the ACT model in everyday life. My process included
+            brainstorming, journey mapping, and early product definition to help
+            BEON Performance evaluate whether a scalable digital product could
+            complement its in-person seminars and one-on-one coaching.
           </div>
         </div>
         {/* Competitive landscape */}
@@ -133,47 +127,37 @@ export default function Beon() {
               Core Pillars of the Experience
             </div>
             <div className="text-lg font-light tracking-tight text-zinc-600 md:text-lg">
-              The three main pillars of the experience were ACT Models, Events,
-              and Insights.
+              The experience centered on three pillars: ACT Models, Events, and
+              Insights.
               <ul className="mt-8 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
                 <li className="border-b border-b-zinc-300 py-4">
-                  ACT Models served as a user-managed system of key terms,
-                  concepts, and ideas that collectively formed a structured
-                  framework for mental training. These models were designed to
-                  be tracked, refined, and applied to real-life scenarios.
+                  ACT Models gave users a structured way to manage key terms,
+                  concepts, and ideas for mental training.
                 </li>
                 <li className="border-b border-b-zinc-300 py-4">
-                  Events represented significant moments or challenges in a
-                  user’s life, where ACT Models could be applied to develop
-                  resilience, optimize performance, and reinforce mental
-                  training.
+                  Events captured important moments where users could apply ACT
+                  Models and reflect on performance.
                 </li>
                 <li className="border-b border-b-zinc-300 py-4">
-                  Insights provided data-driven reflections on a user’s
-                  progress, helping them fine-tune their mindset and approach
-                  over time.
+                  Insights helped users review progress and refine their
+                  approach over time.
                 </li>
               </ul>
             </div>
           </div>
         </div>
 
-        {/* Make the journey short and easy!!! */}
+        {/* ACT model */}
         <div className="mx-auto flex flex-col gap-x-8 py-12 font-sans md:flex-row md:py-24">
           <div className="mb-8 flex-1 text-2xl font-medium tracking-tighter text-zinc-800 md:text-5xl">
             The ACT model
           </div>
           <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
-            Whether used by a high-profile corporate leader or an elite military
-            commander, the ACT Model functioned as a training compass—guiding
-            individuals toward their maximum potential. However, the challenge
-            was translating this abstract, yet powerful, mindset into a tangible
-            digital experience. The solution? A guided ACT Model creation
-            experience that seamlessly led users through the process of
-            building, refining, and applying their personal mental frameworks.
-            This approach ensured that the core philosophy of the ACT Model
-            remained intact, while making it actionable and engaging in a
-            digital format.
+            The ACT Model was intended to guide people through mental
+            performance training, but the challenge was translating an abstract
+            framework into a tangible digital experience. I designed a guided
+            creation flow that helped users build, refine, and apply personal
+            mental frameworks while keeping the core philosophy intact.
           </div>
         </div>
         <AnimatedImage
@@ -196,24 +180,18 @@ export default function Beon() {
         {/* Tracking and Reflecting on Performance */}
         <div className="mx-auto flex flex-col gap-8 gap-x-8 py-12 font-sans md:flex-row md:py-24">
           <div className="mb-8 flex-1 text-2xl font-medium tracking-tighter text-zinc-800 md:text-5xl">
-            Tracking and Reflecting on Performance
+            Tracking and reflecting on performance
           </div>
           <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
-            The second pillar, Events, functioned as a hybrid calendar and
-            performance tracker. Like any standard calendar, it allowed users to
-            schedule and track important meetings, competitions, practices, and
-            other key moments. However, what set it apart was its reflection
-            component—users could evaluate their performance after each event,
-            providing an honest self-assessment to uncover insights and trends
-            over time.
+            Events functioned as a hybrid calendar and performance tracker.
+            Users could schedule meetings, competitions, practices, and other
+            key moments, then reflect on their performance afterward to uncover
+            insights and trends.
           </div>
           <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
-            I explored different ways to present this feature, from a
-            traditional calendar view to a streamlined list format, ensuring
-            usability and clarity. The key challenge was balancing familiarity
-            with functionality—the interface needed to be intuitive while
-            encouraging users to engage deeply with their progress and mindset
-            development.
+            I explored several ways to present the feature, from a traditional
+            calendar to a streamlined list. The challenge was balancing familiar
+            patterns with enough structure to encourage meaningful reflection.
           </div>
         </div>
         {/* Quote and Bundle */}
@@ -234,16 +212,11 @@ export default function Beon() {
             Insights
           </div>
           <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
-            After using the application for a while, users would receive
-            personalized insights based on their progress. The challenge was
-            twofold: (a) quantifying results effectively and (b) presenting them
-            in a way that encourages self-development. I explored various
-            visualization techniques, including progress bars, radial charts,
-            and heatmaps, to highlight key milestones and engagement patterns.
-            To refine the approach, I tested these designs with a small user
-            group, focusing on clarity and motivation. Feedback helped shape the
-            final version, ensuring the insights were both intuitive and
-            encouraging for continued growth.
+            Over time, users would receive personalized insights based on their
+            progress. I explored progress bars, radial charts, and heatmaps to
+            make milestones and engagement patterns easier to understand. A
+            small user group helped refine the direction for clarity and
+            motivation.
           </div>
         </div>
         <div className="my-4 flex items-center justify-center border border-zinc-300 bg-zinc-50 py-8">
@@ -262,14 +235,11 @@ export default function Beon() {
             Final thoughts
           </div>
           <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
-            This project was a valuable experience in developing conceptual
-            ideas and pitching a product from the ground up. Working within a
-            small startup setting and navigating the ideation process was
-            especially rewarding for me. At the time, BEON Performance was in
-            its early stages, and we were simultaneously refining its business
-            strategy. Ultimately, the team decided to focus on in-person
-            seminars and one-on-one coaching as their core business model, so
-            this project did not progress beyond the ideation phase.
+            This project helped define and pitch a product concept from the
+            ground up. At the time, BEON Performance was still refining its
+            business strategy. The team ultimately chose to focus on in-person
+            seminars and one-on-one coaching, so the digital product did not
+            move beyond ideation.
           </div>
         </div>
         {/* Next & Previous Project Navigation */}

@@ -9,8 +9,12 @@ import VideoSection from "@/components/VideoSection";
 import { usePathname } from "next/navigation";
 
 const caseStudies = [
+  { slug: "unify", title: "Unify Design System" },
+  { slug: "beacon", title: "Beacon Mobile" },
   { slug: "codeconnect", title: "Code Connect" },
   { slug: "quest", title: "Quest Insurance" },
+  { slug: "tddashboards", title: "TD Dashboards" },
+  { slug: "tdbillmanager", title: "TD Bill Manager" },
   { slug: "beon", title: "Beon" },
   { slug: "projectalchemy", title: "Project Alchemy" },
 ];
@@ -58,11 +62,11 @@ export default function CodeConnect() {
         {/* Intro */}
         <div className="mx-auto flex flex-col gap-8 border-t border-t-zinc-300 py-12 font-sans md:flex-row md:py-24">
           <div className="flex-1 text-xl font-light tracking-normal text-zinc-600 md:text-2xl md:font-thin">
-            FIS Code Connect is an API marketplace offering 700+ open APIs for
-            banking, payments, fraud prevention, and more. It empowers
-            businesses to innovate, streamline operations, and enhance digital
-            experiences. An independent study found it delivers a 193% ROI over
-            three years, proving its financial and efficiency benefits.
+            FIS Code Connect is an API marketplace with 700+ open APIs across
+            banking, payments, fraud prevention, and related financial services.
+            The platform helps businesses discover solutions, streamline
+            integration, and improve digital experiences. An independent study
+            reported a 193% ROI over three years.
           </div>
           <div className="mb-8 text-5xl font-medium tracking-tighter text-zinc-800">
             <div className="mb-4">
@@ -86,7 +90,7 @@ export default function CodeConnect() {
                 Duration
               </p>
               <p className="font-sans text-lg font-medium tracking-tighter text-zinc-600 md:text-xl">
-                6 months - current
+                6 months, ongoing
               </p>
             </div>
           </div>
@@ -99,28 +103,28 @@ export default function CodeConnect() {
         <div className="mx-auto flex flex-col gap-8 border-t border-t-zinc-300 py-12 font-sans md:flex-row md:py-24">
           <div className="flex-1">
             <div className="font-regular flex-1 text-base text-zinc-600 md:text-lg">
-              As a UX/Product Designer on the project, my focus was on
-              redesigning and creating a seamless user experience and
-              introducing new key features into the Code Connect Marketplace
-              that was starting to show its age based on its competitors.
+              As a UX/Product Designer, I focused on modernizing the Code
+              Connect marketplace, improving the user experience, and
+              introducing features that helped the product better compete with
+              other API discovery platforms.
               <h2 className="mt-4">Key Contributions:</h2>
               <ul className="ml-12 list-disc">
                 <li>
-                  Research & Competitive Analysis: Identified gaps and areas of
+                  Research & competitive analysis: identified gaps and areas of
                   differentiation through industry research.
                 </li>
                 <li>
-                  Navigation & Information Architecture: Improved usability by
+                  Navigation & information architecture: improved usability by
                   restructuring key sections.
                 </li>
 
                 <li>
-                  ross-Functional Collaboration: Worked closely with marketing
+                  Cross-functional collaboration: worked closely with marketing
                   and project management to ensure a cohesive user experience
                   and brand alignment.
                 </li>
                 <li>
-                  Data-Driven Enhancements: Introduced insights-driven
+                  Data-driven enhancements: introduced insights-driven
                   dashboards and search features to enhance decision-making for
                   users.
                 </li>
@@ -132,15 +136,15 @@ export default function CodeConnect() {
         {/* Homepage */}
         <div className="mx-auto flex flex-col gap-x-8 py-12 font-sans md:flex-row md:py-24">
           <div className="mb-8 flex-1 text-2xl font-medium tracking-tighter text-zinc-800 md:text-5xl">
-            Homepage: Improving Navigation & Clarity
+            Homepage: improving navigation and clarity
           </div>
           <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
             <div className="font-medium">Problem</div>
             <div className="text-base text-zinc-600 md:text-lg">
               The homepage lacked clear direction, leaving users uncertain about
-              where to navigate next. Developers, in particular, found the
-              content too marketing-heavy, making it difficult to quickly access
-              relevant information.
+              where to go next. Developers found the content too
+              marketing-heavy, which made relevant technical information harder
+              to access.
             </div>
             <div className="mt-8 font-medium">Solution</div>
             <ul className="text-lg font-light tracking-tight text-zinc-600 md:text-lg">
@@ -148,11 +152,11 @@ export default function CodeConnect() {
                 Improved navigation and information hierarchy.
               </li>
               <li className="border-b border-b-zinc-300 py-4 text-base text-zinc-600 md:text-lg">
-                Prominent display of platform announcements.
+                Added a prominent area for platform announcements.
               </li>
               <li className="border-b border-b-zinc-300 py-4 text-base text-zinc-600 md:text-lg">
-                Clear, intuitive labels for navigation (e.g., Home, Catalog,
-                Help Center) instead of ambiguous terminology.
+                Replaced ambiguous terminology with clear labels such as Home,
+                Catalog, and Help Center.
               </li>
             </ul>
           </div>
@@ -169,15 +173,13 @@ export default function CodeConnect() {
         {/* Dashboards */}
         <div className="mx-auto flex flex-col gap-8 border-t border-t-zinc-300 py-12 font-sans md:flex-row md:py-24">
           <div className="mb-8 flex-1 text-2xl font-medium tracking-tighter text-zinc-800 md:text-5xl">
-            Dashboards: Enhancing User Insights
+            Dashboards: improving user insight
           </div>
           <div className="text-base text-zinc-600 md:text-lg">
-            Users lacked a centralized way to track their API usage trends and
-            financial forecasts, making it harder to make informed decisions.
-            Solution: Introduced a comprehensive dashboard displaying key usage
-            metrics and financial forecasts. Users can analyze past usage
-            patterns and anticipate future costs based on historical data.
-            Improved data visualization for proactive resource management.
+            Users lacked a centralized way to track API usage trends and
+            financial forecasts. I introduced dashboard views that surfaced key
+            usage metrics, historical patterns, and projected costs so users
+            could make more informed resource decisions.
           </div>
         </div>
 
@@ -194,15 +196,14 @@ export default function CodeConnect() {
         {/* Product Catalog */}
         <div className="mx-auto flex flex-col gap-8 border-t border-t-zinc-300 py-12 font-sans md:flex-row md:py-24">
           <div className="mb-8 flex-1 text-2xl font-medium tracking-tighter text-zinc-800 md:text-5xl">
-            Product Catalog: Streamlining Discovery & Usability
+            Product catalog: streamlining discovery
           </div>
           <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
-            Problem: The catalog was overwhelming, featuring 100+ products,
-            making it difficult to find relevant solutions. Solution: Optimized
-            product list from 100+ to 30, ensuring a more focused experience.
-            Toggle for &quot;My Solutions&quot; to filter client-specific products.
-            Favorites feature for quick access to bookmarked solutions. Inline
-            search functionality for users who know exactly what they need.
+            The catalog contained 100+ products, which made it difficult for
+            users to find the right solution. We reduced the list to 30 focused
+            products, added a &quot;My Solutions&quot; filter for client-specific
+            products, introduced favorites for quick access, and added inline
+            search for users who already knew what they needed.
           </div>
         </div>
         {/* Product Catalog Section */}
@@ -219,18 +220,16 @@ export default function CodeConnect() {
         {/* Feedback */}
         <div className="mx-auto flex flex-col gap-8 border-t border-t-zinc-300 py-12 font-sans md:flex-row md:py-24">
           <div className="mb-8 flex-1 text-2xl font-medium tracking-tighter text-zinc-800 md:text-5xl">
-            User Feedback Mechanism
+            User feedback
           </div>
           <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
-            Problem: In the current application, user were not able to give
-            feedback on the various content types present in Code Connect. This
-            was especially needed for the API documentation pages.
+            Users had no clear way to give feedback on Code Connect content,
+            especially API documentation.
           </div>{" "}
           <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
-            Solution: Present users with a quick and easy way to provide
-            feedback starting with the API Documentation pages. Since this was
-            not a priority placing the actions at the bottom of the screen made
-            the most sense.
+            We added a lightweight feedback pattern for API documentation pages.
+            Because the action was secondary to the main task, the feedback
+            controls were placed at the bottom of the page.
           </div>
         </div>
         <VideoSection
@@ -241,18 +240,16 @@ export default function CodeConnect() {
         {/* Design Iterations */}
         <div className="mx-auto flex flex-col gap-8 border-t border-t-zinc-300 py-12 font-sans md:flex-row md:py-24">
           <div className="mb-8 flex-1 text-2xl font-medium tracking-tighter text-zinc-800 md:text-5xl">
-            Design Iterations
+            Design iterations
           </div>
           <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
-            Problem: In the current application, user were not able to give
-            feedback on the various content types present in Code Connect. This
-            was especially needed for the API documentation pages.
+            The redesign required multiple iterations across navigation,
+            product discovery, dashboard views, and documentation feedback.
           </div>{" "}
           <div className="flex-1 text-lg font-light tracking-tight text-zinc-600 md:text-lg">
-            Solution: Present users with a quick and easy way to provide
-            feedback starting with the API Documentation pages. Since this was
-            not a priority placing the actions at the bottom of the screen made
-            the most sense.
+            I explored alternative layouts and interaction patterns, then
+            refined the work based on product priorities, stakeholder input, and
+            usability needs.
           </div>
         </div>
         <VideoSection
@@ -263,14 +260,12 @@ export default function CodeConnect() {
         {/* Impact & Results */}
         <div className="mx-auto flex flex-col gap-8 border-t border-t-zinc-300 py-12 font-sans md:flex-row md:py-24">
           <div className="mb-8 flex-1 text-2xl font-medium tracking-tighter text-zinc-800 md:text-5xl">
-            Impact & Results
+            Impact and results
           </div>
           <div className="flex-1">
-            Improved homepage clarity, ensuring users navigate more efficiently.
-            Enhanced dashboard insights, allowing businesses to make data-driven
-            decisions. Streamlined product catalog, reducing friction in
-            discovery and selection. Created a more developer-friendly
-            experience, balancing marketing content with usability.
+            The work improved homepage clarity, added more useful dashboard
+            insights, reduced friction in product discovery, and created a more
+            developer-friendly balance between marketing content and usability.
           </div>
         </div>
         <AnimatedImage

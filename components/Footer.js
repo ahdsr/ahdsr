@@ -12,7 +12,7 @@ export default function Footer() {
           <div className="grid grid-cols-1 gap-8 pt-12 font-sans text-sm sm:grid-cols-2 md:grid-cols-4">
             <div>
               <h3 className="text-lg font-semibold text-indigo-500">
-                Find me on
+                Connect
               </h3>
               <ul className="mt-2 space-y-2 text-gray-600">
                 <li>

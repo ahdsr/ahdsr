@@ -17,8 +17,9 @@ import Footer from "@/components/Footer";
 // });
 
 export const metadata = {
-  title: "Lucas Czuchraj - UX Portfolio",
-  description: "Selected works",
+  title: "Lucas Czuchraj - Product Design Portfolio",
+  description:
+    "Selected product design, UX, UI, design system, and front-end implementation work by Lucas Czuchraj.",
 };
 
 export default function RootLayout({ children }) {
